@@ -31,4 +31,14 @@ sub print_hello {
 
 print_hello;
 ```
-    
+some mathematica code 
+```mathematica
+f[x_Integer] := Map[PrimeQ, x]
+
+Block[
+    {x,y},
+    Plus[x,y];
+    Power[x,y]
+]
+
+```    

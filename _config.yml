@@ -13,6 +13,8 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  extensions: fenced_code_blocks
+  math_engine: mathjax
 
 plugins:
   - jekyll-paginate
@@ -24,7 +26,6 @@ paginate_path: /page-:num
 source: .
 destination: ./_site
 
-sass:
-    style: :compressed
-    sass_dir: assets/css/
-
+#sass:
+#    style: :compressed
+#    sass_dir: assets/css/
