@@ -11,6 +11,8 @@ https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 
 https://github.com/Simpleyyt/jekyll-theme-next/blob/master/_includes/archive.html
 
+https://github.com/wowthemesnet/jekyll-theme-memoirs
+
 	<h2>归档</h2>
 	<ul>
 	  {% for post in site.posts %}
@@ -24,6 +26,6 @@ https://github.com/Simpleyyt/jekyll-theme-next/blob/master/_includes/archive.htm
 	      {% endif %}
 	    {% endunless %}
 
-	    <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+	    <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>

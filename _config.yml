@@ -3,8 +3,8 @@ description: "在海边玩耍的男孩"
 
 exclude: [README.md, Makefile]
 
-url: '' 
-baseurl: ''
+url: https://xienotes.github.io
+baseurl: ""
 
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
