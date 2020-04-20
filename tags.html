@@ -2,20 +2,18 @@
 layout: default
 title: 标签
 ---
+<h2>标签</h2>
 
-	<h2>标签</h2>
-	<ul>
-	  {% for post in site.posts %}
-	    {% unless post.next %}
-	      <h3>{{ post.date | date: '%Y-%m' }}</h3>
-	    {% else %}
-	      {% capture year %}{{ post.date | date: '%Y-%m' }}{% endcapture %}
-	      {% capture nyear %}{{ post.next.date | date: '%Y-%m' }}{% endcapture %}
-	      {% if year != nyear %}
-	        <h3>{{ post.date | date: '%Y-%m' }}</h3>
-	      {% endif %}
-	    {% endunless %}
-
-	    <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+{% for tag in site.tags%}
+  <h3>{{ tag[0] | slugify }} </h3>
+  <ul>
+    {% for post in tag[1] %}
+    <li>
+      <span>{{ post.date | date: '%Y-%m-%d' }}</span>&nbsp;
+      <a href="{{ site.baseurl }}{{ post.url }}"> 
+        {{ post.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

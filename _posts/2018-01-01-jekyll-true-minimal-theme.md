@@ -6,6 +6,7 @@ tags:
 - theme
 - jekyll
 mathjax: true
+category: blah
 ---
 
 True minimal theme is extremely lightweight and ascetic jekyll theme.

@@ -6,6 +6,8 @@ exclude: [README.md, Makefile]
 url: https://xienotes.github.io
 baseurl: ""
 
+permalink: /:year/:month/:day/:title.html
+
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge

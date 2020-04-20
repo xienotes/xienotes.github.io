@@ -2,32 +2,19 @@
 layout: default
 title: 分类
 ---
-to change according to following links
-
-https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
-
-https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
-
-https://itaken.github.io/post/2017/03/12/jekyll%E4%BD%BF%E7%94%A8tags.html
-
-https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/_includes/tag.html
-
-https://github.com/Simpleyyt/jekyll-theme-next
-
-https://jekyllrb.com/docs/posts/
 
 <h2>分类</h2>
-<ul>
-  {% for post in site.posts %}
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y-%m' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y-%m' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y-%m' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y-%m' }}</h3>
-      {% endif %}
-    {% endunless %}
-    <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+
+{% for category in site.categories%}
+  <h3>{{ category[0] | slugify }} </h3>
+  <ul>
+    {% for post in category[1] %}
+    <li>
+      <span>{{ post.date | date: '%Y-%m-%d' }}</span>&nbsp;
+      <a href="{{ site.baseurl }}{{ post.url }}"> 
+        {{ post.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
