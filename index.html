@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% include homecontent.md %}
+
 
 {% for post in paginator.posts %}
 <section>
@@ -11,14 +13,14 @@ layout: default
   </h2>
   
   <p>{{ post.excerpt | strip_html | truncate: 500 }}</p>
-</section>       
+</section>
 {% endfor %}
 
 {% if paginator.previous_page %}
 <a href='{{ site.baseurl }}{{ paginator.previous_page_path }}'>前一页</a>
 {% endif %}
 
-&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;
+&mdash; {{ paginator.page }} / {{ paginator.total_pages }} &mdash;
 
 {% if paginator.next_page %}
 <a href='{{ site.baseurl }}{{ paginator.next_page_path }}'>后一页</a>

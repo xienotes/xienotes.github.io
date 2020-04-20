@@ -1,7 +1,10 @@
 ---
 layout: post
 title:  "Jekyll true minimal theme"
-date:   2018-01-01 23:22:40 +0300
+date:   2018-01-03 23:22
+tags: 
+- theme
+- jekyll
 ---
 
 True minimal theme is extremely lightweight and ascetic jekyll theme.
@@ -32,6 +35,7 @@ sub print_hello {
 print_hello;
 ```
 some mathematica code 
+
 ```mathematica
 f[x_Integer] := Map[PrimeQ, x]
 

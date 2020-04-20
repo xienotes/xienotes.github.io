@@ -1,9 +1,25 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}{{ page.shortUrl }}</h1>
-<div class='separator'></div>
-        
+{% if site.highlighter %}
+<link rel='stylesheet' href='{{ site.baseurl }}/assets/syntax.css' type='text/css'>
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+发表日期：<i>{{ page.date | date: "%Y-%m-%d" }}</i>
+
+{% comment %}
+{% if page.tags %}
+    <span>
+    {% for tags in page.tags %}
+        {{ tags | slugify }}
+    {% endfor %}
+    </span>
+{% endif %}
+{% endcomment %}
+
+<div class='separator' style="height: 20px;"></div>
+
 {{ content }}
         
 {% comment %}
