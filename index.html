@@ -12,7 +12,7 @@ layout: default
       {% for post in site.posts limit: site.front_page_post %}
         
         <span class="post-date" style="color:rgb(153, 153, 153); font-weight: bold;">{{ post.date|date: "%Y-%m-%d" }}</span>
-        <h3 style="margin-top: 1px;">
+        <h3 style="margin-top: 1px; margin-bottom:5px">
           <a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>
             {{ post.title }}
           </a>
