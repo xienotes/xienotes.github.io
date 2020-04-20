@@ -7,10 +7,18 @@ layout: default
 
 {% include mathjax.html %}
 
-<h1>{{ page.title }}</h1>
+<h1 style="margin-bottom: 10px;">{{ page.title }}</h1>
 
-<span class="publish date" style="color:rgb(153, 153, 153);">
-     发表日期：<i>{{ page.date | date: "%Y-%m-%d" }}</i> 
+<span class="publish-date-tag" style="color:rgb(153, 153, 153);">
+     发表日期：<i>{{ page.date | date: "%Y-%m-%d" }}</i>
+    {% if page.tags %}  
+        <span>
+            &ensp; 标签: 
+            {% for tags in page.tags %}
+            <a href="{{ site.baseurl }}/tags.html#{{ tags | slugify | strip }}">{{ tags | slugify | strip }}</a>&ensp;
+            {% endfor %}
+        </span>
+    {% endif %}
 </span>
 
 {% comment %}
