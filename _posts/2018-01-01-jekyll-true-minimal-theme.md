@@ -5,6 +5,7 @@ date:   2018-01-03 23:22
 tags: 
 - theme
 - jekyll
+mathjax: true
 ---
 
 True minimal theme is extremely lightweight and ascetic jekyll theme.
@@ -46,3 +47,8 @@ Block[
 ]
 
 ```    
+
+some equation
+$$
+e^{i\pi}+1=0
+$$
