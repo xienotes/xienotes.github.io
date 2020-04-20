@@ -22,6 +22,9 @@ plugins:
 paginate: 20
 paginate_path: /page-:num
 
+front_page_post: 10
+
+
 #disqus-id: your-disqus-id
 
 source: .

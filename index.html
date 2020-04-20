@@ -1,7 +1,37 @@
 ---
 layout: default
 ---
-{% include homecontent.md %}
+{% capture my_include %}
+  {% include homeintro.md %}
+{% endcapture %}
+{{ my_include | markdownify }}
+
+<section>
+  <h2>最新博文</h2>
+  <ul class="post list-unstyled">
+      {% for post in site.posts limit: site.front_page_post %}
+        
+        <span class="post-date" style="color:rgb(153, 153, 153); font-weight: bold;">{{ post.date|date: "%Y-%m-%d" }}</span>
+        <h3 style="margin-top: 1px;">
+          <a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>
+            {{ post.title }}
+          </a>
+        </h3>
+        
+        <p>{{ post.excerpt | strip_html | truncatewords: 300 }}</p>
+
+      {% endfor %}
+  </ul>
+  {% assign numposts = site.posts | size %}
+  {% if numposts > site.front_page_post %}
+      <p>
+          <a href="{{ site.base }}/archive.html">更多&hellip;</a>
+      </p>
+  {% endif %}
+</section>
+
+
+{% comment %}
 
 
 {% for post in paginator.posts %}
@@ -26,3 +56,4 @@ layout: default
 <a href='{{ site.baseurl }}{{ paginator.next_page_path }}'>后一页</a>
 {% endif %}
 
+{% endcomment %}
