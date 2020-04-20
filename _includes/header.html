@@ -1,12 +1,17 @@
+<style>
+    a.nav-item {
+        font-size: large;
+    }
+</style>
 <header>
     <h1><a href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
 </header>
 <nav>
-<a href='{{ site.baseurl }}/'> 主页</a> |
-<a href='{{ site.baseurl }}/todo.html'>待办 </a> |
-<a href='{{ site.baseurl }}/archive.html'> 归档</a> |
-<a href='{{ site.baseurl }}/tags.html'> 标签 </a> |
-<a href='{{ site.baseurl }}/categories.html'> 分类 </a>  |
-<a href='{{ site.baseurl }}/search.html'> 搜索 </a>  
+<a class="nav-item" href='{{ site.baseurl }}/'> 主页</a> |
+<a class="nav-item" href='{{ site.baseurl }}/todo.html'>待办 </a> |
+<a class="nav-item" href='{{ site.baseurl }}/archive.html'> 归档</a> |
+<a class="nav-item" href='{{ site.baseurl }}/tags.html'> 标签 </a> |
+<a class="nav-item" href='{{ site.baseurl }}/categories.html'> 分类 </a>  |
+<a class="nav-item" href='{{ site.baseurl }}/search.html'> 搜索 </a>  
 </nav>
 <hr>
