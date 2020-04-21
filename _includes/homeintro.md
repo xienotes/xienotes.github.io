@@ -5,4 +5,6 @@
    
 联系邮件： `cexieyn AT 163.com`，欢迎来邮。
 
-网站托管于 [GitHub Pages](https://pages.github.com/)，采用默认的 [Jekyll](https://jekyllrb.com/) 引擎，主题基于 [true minimal](https://github.com/cyevgeniy/jekyll-true-minimal/) 改动，大概可称作 `false minimal`。
+网站托管于 <a href="https://pages.github.com/" target="_blank"> GitHub </a>，采用默认的 
+<a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 引擎，主题基于 
+<a href="https://github.com/cyevgeniy/jekyll-true-minimal/" target="_blank"> true minimal </a>  改动，大概可称作 `quasi-true minimal`。

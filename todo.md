@@ -12,7 +12,6 @@ layout: default
 #### 力学
 * Soil Dynamics
 
-#### 编程相关
+#### IT相关
 * Constitutive modeling with Mathematica
-
-#### 写作
+* 本网站搭建及设置相关说明
