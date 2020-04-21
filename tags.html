@@ -4,11 +4,24 @@ title: 标签
 ---
 <h2>标签</h2>
 
-{% for tag in site.tags %}
-  <a href="{{ site.baseurl}}/tags.html#{{ tag[0] | slugify }}">{{ tag[0] | slugify }}</a>&thinsp;
+{% comment %}
+sort tag by post count from https://www.gungorbudak.com/blog/2017/12/08/tags-cloud-sorted-by-post-count-for-jekyll-blogs-without-plugins/
+{% endcomment %}
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: -10000 }}###{{ tag[0] | replace: ' ', '##' }}###{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sorted_tags = tags | split: ' ' | sort %}
+{% for sorted_tag in sorted_tags %}
+    {% assign items = sorted_tag | split: '###' %}
+    {% assign tag = items[1] | replace: '##', ' ' %}
+    {% assign count = items[2] | plus: 0 %}
+    <a href="{{ site.baseurl}}/tags.html#{{ tag | slugify }}">{{ tag }} ({{ count }})</a>&thinsp;
 {% endfor %}
 
-{% for tag in site.tags%}
+{% assign sort_tag = site.tags | sort %}
+{% for tag in sort_tag %}
   <h3>{{ tag[0] | slugify }} </h3>
   <ul>
     {% for post in tag[1] %}

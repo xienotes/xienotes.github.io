@@ -3,6 +3,23 @@ layout: default
 title: 归档
 ---
 <h2>归档</h2>
+
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+{% for year in postsByYear %}
+<h3 id="{{ year.name }}">{{ year.name }}</h3>
+<ul aria-label="posts from {{ year.name }}">
+  {% for post in year.items %}
+  <li>
+		<span>{{ post.date | date: '%m-%d' }}</span>&nbsp;
+		<a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+
+{% comment %}
 <ul>
   {% for post in site.posts %}
     {% unless post.next %}
@@ -20,3 +37,4 @@ title: 归档
 	</li>
   {% endfor %}
 </ul>
+{% endcomment %}
