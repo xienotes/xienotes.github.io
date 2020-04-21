@@ -16,17 +16,20 @@
 </head>
 
 <body>
-    {% include header.html %}
+    <div class="container" style="padding: 0px 25px 0px 25px;"></div>
+        {% include header.html %}
+        {{ content }}
+    
 
-    {{ content }}
-<hr>
-
+        <hr>
+<!-- footer -->
 {% assign currentYear = "now" | date: '%Y' %}
 {% if currentYear != "2020" %}
-    <p><small> Copyright©2020-{{ "now" | date: '%Y' }} by xieyn </small></p>
+    <p style="margin-top:3px;"><small> Copyright©2020-{{ "now" | date: '%Y' }} by xieyn </small></p>
 {% else %}
-    <p><small> Copyright©2020 by xieyn </small></p>
+    <p style="margin-top:3px;"><small> Copyright©2020 by xieyn </small></p>
 {% endif %}
 
+    </div>
 </body>
 </html>

@@ -8,15 +8,15 @@ layout: default
 
 <section>
   <h2>最新博文</h2>
-  <ul class="post list-unstyled">
+  <ul class="post list-unstyled" style="padding-left: 20px;">
       {% for post in site.posts limit: site.front_page_post %}
         
         <span class="post-date" style="color:rgb(153, 153, 153); font-weight: bold;">{{ post.date|date: "%Y-%m-%d %H:%M" }}</span>
-        <h3 style="margin-top: 1px; margin-bottom:5px;">
+        <h4 style="margin-top: 1px; margin-bottom:5px;">
           <a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>
             {{ post.title }}
           </a>
-        </h3>
+        </h4>
         
         <p style="margin-top: 7px;">{{ post.excerpt | strip_html | truncatewords: 300 }}</p>
 
