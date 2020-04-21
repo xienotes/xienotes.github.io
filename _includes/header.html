@@ -1,17 +1,28 @@
 <style>
+    a.site-name {
+        color:black;
+        text-decoration: none;
+    }
+
     a.nav-item {
+        color:#007bff;
         font-size: large;
+        text-decoration: none;
+    }
+    .active {
+        font-weight: bold;
     }
 </style>
+
 <header>
-    <h1><a href='{{ site.baseurl }}/' style="text-decoration: none;">{{ site.name }}</a></h1>
+    <h1><a class="site-name" href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
 </header>
-<nav>
-<a class="nav-item" href='{{ site.baseurl }}/'> 主页</a> |
-<a class="nav-item" href='{{ site.baseurl }}/todo.html'>待办 </a> |
-<a class="nav-item" href='{{ site.baseurl }}/archive.html'> 归档</a> |
-<a class="nav-item" href='{{ site.baseurl }}/categories.html'> 分类 </a>  |
-<a class="nav-item" href='{{ site.baseurl }}/tags.html'> 标签 </a> |
-<a class="nav-item" href='{{ site.baseurl }}/search.html'> 搜索 </a>  
+<nav id="nav-bar">
+    <a class="nav-item" href='{{ site.baseurl }}/'> 主页</a> |
+    <a class="nav-item" href='{{ site.baseurl }}/todo.html'>待办 </a> |
+    <a class="nav-item" href='{{ site.baseurl }}/archive.html'> 归档</a> |
+    <a class="nav-item" href='{{ site.baseurl }}/categories.html'> 分类 </a>  |
+    <a class="nav-item" href='{{ site.baseurl }}/tags.html'> 标签 </a> |
+    <a class="nav-item" href='{{ site.baseurl }}/search.html'> 搜索 </a>  
 </nav>
 <hr>
