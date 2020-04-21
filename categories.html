@@ -6,6 +6,13 @@ title: 分类
 <h2>分类</h2>
 
 {% assign sort_cat = site.categories | sort %}
+
+{% for category in sort_cat %}
+  <a href="{{site.baseurl}}/categories.html#{{ category[0] | slugify }}">
+    {{ category[0] }}({{ category[1].size }})
+  </a>&ensp;
+{% endfor %}
+
 {% for category in sort_cat %}
   <h3>{{ category[0] | slugify }} </h3>
   <ul>

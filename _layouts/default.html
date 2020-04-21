@@ -20,6 +20,13 @@
 
     {{ content }}
 <hr>
-    <p><small> <i>2020 - by xieyn</i> </small></p>
+
+{% assign currentYear = "now" | date: '%Y' %}
+{% if currentYear != "2020" %}
+    <p><small> Copyright©2020-{{ "now" | date: '%Y' }} by xieyn </small></p>
+{% else %}
+    <p><small> Copyright©2020 by xieyn </small></p>
+{% endif %}
+
 </body>
 </html>
