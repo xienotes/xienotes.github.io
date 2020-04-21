@@ -1,5 +1,24 @@
 ---
 layout: default
 ---
-## 搜索
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="标题 日期 标签 分类">
+<ul id="results-container"></ul>
+</div>
 
+<!-- Script pointing to search-script.js -->
+<script src="{{ site.baseurl }}/assets/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<li><a href="{{ site.baseurl }}{url}" title="{desc}">{title}</a> &nbsp;<span>{date}</span></li>',
+  noResultsText: '没有搜索到文章',
+  limit: 20,
+  fuzzy: false
+})
+</script>
