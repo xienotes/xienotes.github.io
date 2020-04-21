@@ -4,6 +4,10 @@ title: 标签
 ---
 <h2>标签</h2>
 
+{% for tag in site.tags %}
+  <a href="{{ site.baseurl}}/tags.html#{{ tag[0] | slugify }}">{{ tag[0] | slugify }}</a>&thinsp;
+{% endfor %}
+
 {% for tag in site.tags%}
   <h3>{{ tag[0] | slugify }} </h3>
   <ul>
