@@ -1,4 +1,4 @@
-name: "卵石和贝壳"
+name: "卵石与贝壳"
 description: "在海边玩耍的男孩"
 
 exclude: [README.md, Makefile]
