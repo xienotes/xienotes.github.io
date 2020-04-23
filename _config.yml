@@ -1,5 +1,5 @@
-name: "卵石与贝壳"
-description: "在海边玩耍的男孩"
+name: "海边捡点贝壳"
+description: 
 
 exclude: [README.md, Makefile]
 
