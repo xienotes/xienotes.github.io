@@ -1,5 +1,5 @@
 name: "海边捡点贝壳"
-description: 
+description: "个人笔记"
 
 exclude: [README.md, Makefile]
 
