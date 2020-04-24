@@ -4,7 +4,7 @@ layout: default
 ## 搜索
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder=" 标题 日期 标签 分类" style="height:30px;width:150px;">
+<input type="text" id="search-input" placeholder=" 标题 日期 标签 分类" style="height:30px;width:150px; padding-left:5px;">
 <ul id="results-container"></ul>
 </div>
 
