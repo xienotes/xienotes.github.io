@@ -12,10 +12,12 @@ layout: default
       {% for post in site.posts limit: site.front_page_post %}
  
         <li style="margin-bottom: 10px;">
-          <span class="post-date" style="color:rgb(120, 120, 120);font-weight:bold;">{{ post.date|date: "%Y-%m-%d" }}</span>
-        <br>
+          <span class="post-date" style="color:rgb(120, 120, 120);font-weight:500;">{{ post.date|date: "%Y-%m-%d" }}</span>
+          <br>
         <a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>
-          <b>{{ post.title }}</b>
+          <span class="index-post-title" style="font-size:large;font-weight:500;">
+             {{ post.title }} 
+          </span>
         </a> 
         <br>
         {{ post.excerpt | strip_html | truncatewords: 100, '...'}}
