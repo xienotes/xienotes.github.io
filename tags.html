@@ -22,8 +22,8 @@ sort tag by post count from https://www.gungorbudak.com/blog/2017/12/08/tags-clo
 
 {% assign sort_tag = site.tags | sort %}
 {% for tag in sort_tag %}
-  <h3 id="{{ tag[0] | slugify }}">{{ tag[0] | slugify }} </h3>
-  <ul>
+  <h3 id="{{ tag[0] | slugify }}" style="margin-bottom:5px;">{{ tag[0] | slugify }} </h3>
+  <ul style="margin-top:5px;">
     {% for post in tag[1] %}
     <li>
       <span>{{ post.date | date: '%Y-%m-%d' }}</span>&nbsp;

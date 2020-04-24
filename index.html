@@ -8,10 +8,10 @@ layout: default
 
 <section>
   <h2>最近博文</h2>
-  <ul class="post list-unstyled" style="list-style-type:none;padding-left:20px;">
+  <ul class="post list-unstyled" style="list-style-type:none;padding-left:0px;margin-left:0px;margin-right:0px;">
       {% for post in site.posts limit: site.front_page_post %}
  
-        <li style="margin-bottom: 10px;">
+        <li style="margin-bottom: 20px;">
           <span class="post-date" style="color:rgb(120, 120, 120);font-weight:500;">{{ post.date|date: "%Y-%m-%d" }}</span>
           <br>
         <a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>

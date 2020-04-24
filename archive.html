@@ -8,8 +8,8 @@ title: 归档
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 {% for year in postsByYear %}
-<h3 id="{{ year.name }}">{{ year.name }}</h3>
-<ul aria-label="posts from {{ year.name }}">
+<h3 id="{{ year.name }}" style="margin-bottom:5px;">{{ year.name }}</h3>
+<ul aria-label="posts from {{ year.name }}"  style="margin-top:5px;">
   {% for post in year.items %}
   <li>
 		<span>{{ post.date | date: '%m-%d' }}</span>&nbsp;
