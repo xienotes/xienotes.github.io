@@ -5,7 +5,7 @@ date: 2020-04-25 20:21
 tags: [github-pages, jekyll]
 category: CodePlay
 toc: true
-description: "github, jekyll, theme, https, git, liquid, archive, tag, category, search, syntax highlight, mathjax, external links, table of contents, toc, date format, kramdown"
+description: "github, jekyll, theme, https, git, liquid, archive, tag, category, search, syntax highlight, mathjax, external links, table of contents, toc, date format, kramdown, markdown"
 ---
 
 
