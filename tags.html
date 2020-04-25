@@ -17,7 +17,7 @@ sort tag by post count from https://www.gungorbudak.com/blog/2017/12/08/tags-clo
     {% assign items = sorted_tag | split: '###' %}
     {% assign tag = items[1] | replace: '##', ' ' %}
     {% assign count = items[2] | plus: 0 %}
-    <a href="#{{ tag | slugify }}">{{ tag }} ({{ count }})</a>&thinsp;
+    <a href="#{{ tag | slugify }}">{{ tag | slugify }} ({{ count }})</a>&thinsp;
 {% endfor %}
 
 {% assign sort_tag = site.tags | sort %}

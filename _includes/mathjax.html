@@ -1,27 +1,29 @@
 {% if page.mathjax %}
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    jax: ["input/TeX","output/SVG"],
     tex2jax: {
       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
       processEscapes: true
+    },
+    displayAlign: "left"
+  });
+</script>
+
+{% if page.mathnos %}
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "all" },
+      TagSide: "left"
     }
   });
 </script>
-<script
-  type="text/javascript"
-  charset="utf-8"
-  src="https://mathjax.josephjctang.com/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
->
+{% endif %}
+
+<script type="text/javascript" charset="utf-8"
+  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML">
 </script>
 
-{% comment %}
-<script
-  type="text/javascript"
-  charset="utf-8"
-  src="https://vincenttam.github.io/javascripts/MathJaxLocal.js"
->
-</script>
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-{% endcomment %}
 {% endif %}
