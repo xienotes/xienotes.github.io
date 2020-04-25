@@ -19,8 +19,8 @@ layout: default
         </a> 
         <br>
         <p class="post-excerpt" style="margin-top:3px;">
-           {{ post.excerpt | strip_html | truncatewords: 100, '...'}} 
-        </p>        
+           {{ post.excerpt | strip_html | truncate: 233, '...'}} 
+        </p>
         </li>
 
       {% endfor %}
