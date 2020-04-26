@@ -18,13 +18,12 @@
     <h1><a class="site-name" href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
 </header>
 <nav class="header-navigation" id="nav-bar">
-    {% capture navsize %}
-        {{ site.navigation.size | minus: 1}}
-    {% endcapture %}
-    {% for navitem in site.navigation | limit: navsize -%}
+    {%- for navitem in site.navigation -%}
+        {% if forloop.last %}
+        <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'> {{ navitem.name }}</a> 
+        {% else %}
         <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'> {{ navitem.name }}</a> |
-    {% endfor -%}
-    {% assign navitem = site.navigation | last %}
-    <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'>{{ navitem.name }}</a>
+        {% endif %}
+    {%- endfor -%}
 </nav>
 <hr>
