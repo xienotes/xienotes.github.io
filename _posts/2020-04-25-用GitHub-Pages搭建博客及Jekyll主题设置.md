@@ -94,7 +94,7 @@ category: blog
 
    * 所以，总的可能是这样：
 
-     <img src="/assets/namesilo-github-dns.jpg" />
+     <img src="/assets/namesilo-github-dns.JPG" />
 
 3. 回到 Github Repository `Settings`页面，在 GitHub Pages `Custom domain` 处填入刚购买的域名，同时把下面 `Enforce HTTPS`打勾。
 
