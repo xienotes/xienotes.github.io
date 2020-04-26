@@ -360,7 +360,8 @@ Rouge 兼容 Pygments 的主题，因此在 [Pygments 主题预览][pygments-the
       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
       processEscapes: true
     },
-    displayAlign: "left"
+    displayAlign: "left",
+    CommonHTML: { linebreaks: { automatic: true, width: "container"  } }
   });
 </script>
 
@@ -382,7 +383,7 @@ Rouge 兼容 Pygments 的主题，因此在 [Pygments 主题预览][pygments-the
 {% endif %}
 ```
 {% endraw %}
-上述对MathJax的引用和设置参见 [https://stackoverflow.com/a/59147170](https://stackoverflow.com/a/59147170){:target="_blank"}。其中 `displayAlign: "left"` 设置行间公式左对齐，`TagSide` （注意这里不是 `tagSide` ） 设置公式编号放在左边。
+上述对MathJax的引用和设置参见 [https://stackoverflow.com/a/59147170](https://stackoverflow.com/a/59147170){:target="_blank"}。其中 `displayAlign: "left"` 设置行间公式左对齐，`TagSide` （注意这里不是 `tagSide` ） 设置公式编号放在左边。`linebreaks` 可让过长公式换行。
 因为不想要全站加载 MathJax，可预见数学公式主要在 `post` 里面使用，因此修改 `_layouts/post.html` 如下：
 
 {% raw %}
@@ -400,6 +401,9 @@ Rouge 兼容 Pygments 的主题，因此在 [Pygments 主题预览][pygments-the
 * [https://stackoverflow.com/questions/59141529/mathjax-equation-numbers-do-not-show-using-jekyll-on-github-pages](https://stackoverflow.com/questions/59141529/mathjax-equation-numbers-do-not-show-using-jekyll-on-github-pages){:target="_blank"}
 * [https://docs.mathjax.org/en/v2.7-latest/options/input-processors/TeX.html](https://docs.mathjax.org/en/v2.7-latest/options/input-processors/TeX.html){:target="_blank"}
 * [https://docs.mathjax.org/en/v2.7-latest/tex.html](https://docs.mathjax.org/en/v2.7-latest/tex.html){:target="_blank"}
+* [https://stackoverflow.com/a/15237320](https://stackoverflow.com/a/15237320){:target="_blank"}
+* [https://stackoverflow.com/questions/29893923/how-to-make-formula-with-mathjax-responsive](https://stackoverflow.com/questions/29893923/how-to-make-formula-with-mathjax-responsive){:target="_blank"}
+* [https://moodle.org/mod/forum/discuss.php?d=389730](https://moodle.org/mod/forum/discuss.php?d=389730){:target="_blank"}
 
 
 ### 新窗口打开外部链接
