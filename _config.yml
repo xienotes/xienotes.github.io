@@ -19,15 +19,7 @@ kramdown:
   math_engine: mathjax
   parse_block_html: true
 
-plugins:
-  - jekyll-paginate
-paginate: 20
-paginate_path: /page-:num
-
 front_page_post: 10
-
-
-#disqus-id: your-disqus-id
 
 source: .
 destination: ./_site
@@ -37,3 +29,18 @@ destination: ./_site
 #    sass_dir: assets/css/
 
 excerpt_separator: <!--more-->
+
+# header navigation
+navigation:
+  - name: 主页
+    url: /
+  - name: 归档
+    url: /archive.html
+  - name: 分类
+    url: /categories.html
+  - name: 标签
+    url: /tags.html
+  - name: 收藏
+    url: /collections.html
+  - name: 搜索
+    url: /search.html

@@ -5,6 +5,39 @@ layout: default
 <link rel='stylesheet' href='{{ site.baseurl }}/assets/github.css' type='text/css'>
 {% endif %}
 
+<style>
+    img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    code {
+        background-color: #eeeeee;
+        word-break: break-all;
+        padding: 0 4px;
+        margin: 0 2px;
+        border-radius: 4px;
+        color: #4d4d4c;
+    }
+    pre {
+        padding: 10px;
+        overflow: auto;
+        border-radius: 2px;
+        background-color: #f7f7f7;
+        max-height: 610px;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+    }    
+    pre code {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        line-height: 1.6;
+    }
+</style>
+
 {% include mathjax.html %}
 
 <h1 style="margin-bottom: 10px;">{{ page.title }}</h1>

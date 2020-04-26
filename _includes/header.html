@@ -17,12 +17,14 @@
 <header>
     <h1><a class="site-name" href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
 </header>
-<nav id="nav-bar">
-    <a class="nav-item" href='{{ site.baseurl }}/'> 主页</a> |
-    <a class="nav-item" href='{{ site.baseurl }}/archive.html'> 归档</a> |
-    <a class="nav-item" href='{{ site.baseurl }}/categories.html'> 分类 </a>  |
-    <a class="nav-item" href='{{ site.baseurl }}/tags.html'> 标签 </a> |
-    <a class="nav-item" href='{{ site.baseurl }}/collections.html'>收藏 </a> | 
-    <a class="nav-item" href='{{ site.baseurl }}/search.html'> 搜索 </a>
+<nav class="header-navigation" id="nav-bar">
+    {% capture navsize %}
+        {{ site.navigation.size | minus: 1}}
+    {% endcapture %}
+    {% for navitem in site.navigation | limit: navsize -%}
+        <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'> {{ navitem.name }}</a> |
+    {% endfor -%}
+    {% assign navitem = site.navigation | last %}
+    <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'>{{ navitem.name }}</a>
 </nav>
 <hr>
