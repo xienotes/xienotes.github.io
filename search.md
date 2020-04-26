@@ -19,7 +19,6 @@ SimpleJekyllSearch({
   json: '/search.json',
   searchResultTemplate: '<li><a href="{{ site.baseurl }}{url}" title="{desc}">{title}</a> &nbsp;<span>{date}</span></li>',
   noResultsText: '没有搜索到文章',
-  limit: 20,
-  fuzzy: false
+  fuzzy: true
 })
 </script>
