@@ -30,31 +30,31 @@ description: "github, jekyll, theme, https, git, liquid, archive, tag, category,
 
 3. 在本地创建某个文件夹，比如 `g:\githubRepositories\`，用于存放repository。
 
-    进入该文件夹（cmd）：
+   进入该文件夹（cmd）：
+
+   ```bash
+   cd /d g:\githubRepositories\
+   ```
+
+   将该repository clone 下来：
 
     ```bash
-      cd /d g:\githubRepositories\
+    git clone https://github.com/cyevgeniy/jekyll-true-minimal.git
     ```
 
-    将该repository clone 下来：
+   同样将自己的repository也clone下来：
 
-    ```bash
-      git clone https://github.com/cyevgeniy/jekyll-true-minimal.git
-    ```
+   ```bash
+   git clone https://github.com/xienotes/xienotes.github.io.git
+   ```
 
-    同样将自己的repository也clone下来：
+   然后将 `jekyll-true-minimal` 里面的文件全部拷到 `xienotes.github.io` 里面，再通过 git 将文件推送到github 上:
 
-    ```bash
-      git clone https://github.com/xienotes/xienotes.github.io.git
-    ```
-
-    然后将 `jekyll-true-minimal` 里面的文件全部拷到 `xienotes.github.io` 里面，再通过 git 将文件推送到github 上:
-
-    ```bash
-      git add --all
-      git commit -m "first push"
-      git push origin master
-    ```
+   ```bash
+   git add --all
+   git commit -m "first push"
+   git push origin master
+   ```
 
 4. 浏览器输入 `xienotes.github.io`，就打开了我们网站主页，其实就是 repository 里面的 `index.html`。
 
@@ -62,16 +62,16 @@ description: "github, jekyll, theme, https, git, liquid, archive, tag, category,
 参见 [https://jekyllrb.com/docs/posts/#creating-posts](https://jekyllrb.com/docs/posts/#creating-posts){:target="_blank"}
 
 可在 `_posts/` 下面新建文件如 `2020-04-25-first-post.md`，输入如下内容：
-  ```markdown
-    ---
-    layout: post
-    title: first post
-    date: 2020-04-25 20:21
-    tags: [jekyll, github]
-    category: blog
-    ---
-    文章内容
-  ```
+```markdown
+---
+layout: post
+title: first post
+date: 2020-04-25 20:21
+tags: [jekyll, github]
+category: blog
+---
+文章内容
+```
 然后通过 git 将该文档 push 到远端即可。
 
 ### 自定义域名并开启https
