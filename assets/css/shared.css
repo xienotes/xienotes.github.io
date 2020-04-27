@@ -165,8 +165,15 @@ table tr td:last-child {
 }
 
 ul.nav-list {
+    padding-left: 0px;
     list-style-type: none;
+    font-size: 0;
 }
+
+li.nav-item {
+    display: inline;
+}
+
 .nav-item a{
     color: whitesmoke;
     font-size: large;
@@ -211,9 +218,12 @@ ul.nav-list {
     .site-name-text {
         font-size: x-large;
     }
-    .nav-item {
+    .nav-item a{
+        color: whitesmoke;
         font-size: medium;
-    }  
+        padding: 5px;
+        margin-right: 0px;
+    }
     h1 {
         font-size: 2.0em;
     }
