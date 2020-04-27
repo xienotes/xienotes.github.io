@@ -1,0 +1,47 @@
+h1 {
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+code {
+    border: 1px solid #e7eaed;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    background-color: #f8f8f8;
+}
+
+pre {
+    padding: 10px;
+    overflow: auto;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    max-height: 610px;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}    
+pre code {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.post-metadata {
+    color:rgb(120, 120, 120);
+    margin-bottom: 20px;
+}
+
+.post-toc {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}

@@ -1,29 +1,10 @@
-<style>
-    a.site-name {
-        color:black;
-        text-decoration: none;
-    }
-
-    a.nav-item {
-        color:blue;
-        font-size: large;
-        text-decoration: none;
-    }
-    .active {
-        font-weight: bold;
-    }
-</style>
-
-<header>
-    <h1><a class="site-name" href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
+<header class="site-header">
+    <div class="site-name">
+        <a class="site-name-text" href='{{ site.baseurl }}/'>{{ site.name }}</a>
+    </div>
+    <nav class="header-navigation" id="nav-bar">
+        {%- for navitem in site.navigation -%}
+            <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'>{{ navitem.name | strip }}</a>
+        {%- endfor -%}
+    </nav>
 </header>
-<nav class="header-navigation" id="nav-bar">
-    {%- for navitem in site.navigation -%}
-        {% if forloop.last %}
-        <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'> {{ navitem.name }}</a> 
-        {% else %}
-        <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'> {{ navitem.name }}</a> |
-        {% endif %}
-    {%- endfor -%}
-</nav>
-<hr>

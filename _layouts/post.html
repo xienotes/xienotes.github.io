@@ -1,69 +1,48 @@
----
-layout: default
----
-{% if site.highlighter %}
-<link rel='stylesheet' href='{{ site.baseurl }}/assets/github.css' type='text/css'>
-{% endif %}
+<!DOCTYPE html>
+<html>
 
-<style>
-    img {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
-        height: auto;
-    }
-    code {
-        background-color: #eeeeee;
-        word-break: break-all;
-        padding: 0 4px;
-        margin: 0 2px;
-        border-radius: 4px;
-        color: #4d4d4c;
-    }
-    pre {
-        padding: 10px;
-        overflow: auto;
-        border-radius: 2px;
-        background-color: #f7f7f7;
-        max-height: 610px;
-        -moz-tab-size: 4;
-        -o-tab-size: 4;
-        tab-size: 4;
-    }    
-    pre code {
-        background-color: transparent;
-        padding: 0;
-        margin: 0;
-        line-height: 1.6;
-    }
-</style>
+{%- include head.html -%}
 
-{% include mathjax.html %}
+<body>
+    <div class="container">
+        {% include header.html %}
+        
+        <div class="post-container">
 
-<h1 style="margin-bottom: 10px;">{{ page.title }}</h1>
+        <h1 class="post-title">{{ page.title }}</h1>
 
-<span class="publish-date-tag-category" style="color:rgb(120, 120, 120);">
-     发布日期：{{ page.date | date: "%Y-%m-%d %H:%M" }}
-    {% if page.category %}
+        <div class="post-metadata" >
         <span>
-            &thinsp; 分类:
-            <a href="{{ site.baseurl }}/categories.html#{{ page.category | slugify | strip }}">{{ page.category | slugify | strip }}</a>
+             发布日期：{{ page.date | date: "%Y-%m-%d %H:%M" }}
+            {% if page.category %}
+                <span>
+                    &thinsp; 分类:
+                    <a class="post-category" href="{{ site.baseurl }}/categories.html#{{ page.category | slugify | strip }}">{{ page.category | slugify | strip }}</a>
+                </span>
+            {% endif %}
+            {% if page.tags %}
+                <span>
+                    &ensp; 标签:&nbsp;
+                    {% for tags in page.tags %}
+                    <a class="post-tag" href="{{ site.baseurl }}/tags.html#{{ tags | slugify | strip }}">{{ tags | slugify | strip }}</a>&thinsp;
+                    {% endfor %}
+                </span>
+            {% endif %}
         </span>
-    {% endif %}
-    {% if page.tags %}
-        <span>
-            &ensp; 标签:&nbsp;
-            {% for tags in page.tags %}
-            <a href="{{ site.baseurl }}/tags.html#{{ tags | slugify | strip }}">{{ tags | slugify | strip }}</a>&thinsp;
-            {% endfor %}
-        </span>
-    {% endif %}
-</span>
-
-<div class='separator' style="height: 20px;"></div>
-
-{% if page.toc %}
-{% include toc.html html=content h_max=3 %}
-{% endif %}
-
-{{ content }}
+        </div>
+        
+        <div class="post-content">        
+            {% if page.toc %}
+            <div class="post-toc" >
+            {% include toc.html html=content h_max=site.toc_max %}
+            </div>
+            {% endif %}        
+            {{ content }}
+        </div>
+        
+        </div>
+        {% include footer.html %}
+        {% include mathjax.html %}
+    </div>
+</body>
+</html>

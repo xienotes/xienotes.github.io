@@ -1,54 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset='utf-8'>
-    <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %} 
-            {{ site.name }} &mdash; {{ site.description }}
-        {% endif %}
-    </title>
-    
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+{%- include head.html -%}
 
-    <style>
-        @media screen and (max-width: 768px) {
-            ul,ol {
-                padding-left: 20px;
-            }
-        }
-    </style>
-    {% comment %}
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?377326df5767bb30fb17e91250eeffa0";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    {% endcomment %}
-</head>
-
-<body style="width:100%;max-width: 740px;margin:0 auto;">
-    <div class="container" style="padding-left: 10px;padding-right: 10px;" >
-
+<body>
+    <div class="container">
         {% include header.html %}
         {{ content }}
-    
-
-        <hr>
-<!-- footer -->
-{% assign currentYear = "now" | date: '%Y' %}
-{% if currentYear != "2020" %}
-    <p style="margin-top:3px;"><small> Copyright©2020-{{ "now" | date: '%Y' }} by xieyn </small></p>
-{% else %}
-    <p style="margin-top:3px;"><small> Copyright©2020 by xieyn </small></p>
-{% endif %}
-
+        {% include footer.html %}
     </div>
 </body>
 </html>

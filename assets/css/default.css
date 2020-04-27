@@ -1,0 +1,41 @@
+ul.homepage-post-list {
+    list-style-type: none !important;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ul.year-post-list,
+ul.tag-post-list,
+ul.category-post-list {
+    margin-top:5px;
+}
+
+h3.post-year,
+h3.post-tag,
+h3.post-category {
+    margin-bottom:5px;
+}
+h3.recent-post {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #eee;
+}
+
+li.post-list {
+    margin-bottom: 25px;
+}
+.homepage-post-metadata {
+
+}
+.post-date {
+    color:rgb(120, 120, 120);
+    font-weight:500;
+}
+a.homepage-post-title {
+    font-size:large;
+    font-weight:500;
+}
+p.post-exerpt {
+    margin-top: 0px !important;
+}

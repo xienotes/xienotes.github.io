@@ -7,20 +7,21 @@ layout: default
 {{ my_include | markdownify }}
 
 <section>
-  <h2>最近博文</h2>
-  <ul class="post list-unstyled" style="list-style-type:none;padding-left:0px;margin-left:0px;margin-right:0px;">
+  <h3 class="recent-post">最近博文</h3>
+  <ul class="homepage-post-list" >
       {% for post in site.posts limit: site.front_page_post %}
  
-        <li style="margin-bottom: 20px;">
-          <span class="post-date" style="color:rgb(120, 120, 120);font-weight:500;">{{ post.date|date: "%Y-%m-%d" }}</span>
+        <li class="post-list">
+          <div class="homepage-post-metadata">
+          <span class="post-date">{{ post.date|date: "%Y-%m-%d" }}</span>
           <br>
-        <a class="index-post-title" href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}' style="font-size:large;font-weight:500;">
-             {{ post.title }} 
-        </a> 
-        <br>
-        <p class="post-excerpt" style="margin-top:3px;">
+          <a class="homepage-post-title" href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>
+             {{ post.title }}
+          </a> 
+          </div>
+        <div class="post-excerpt">
            {{ post.excerpt | strip_html | truncate: 233, '...'}} 
-        </p>
+        </div>
         </li>
 
       {% endfor %}

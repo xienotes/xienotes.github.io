@@ -1,9 +1,11 @@
 name: "海边捡点贝壳"
 description: "个人笔记"
+author: xieyn
+keywords: [岩土, Mathematica]
 
 exclude: [README.md, Makefile]
 
-url: https://xienotes.github.io
+url: https://xienotes.net
 baseurl: ""
 
 permalink: /:year/:month/:day/:title.html
@@ -44,3 +46,6 @@ navigation:
     url: /collections.html
   - name: 搜索
     url: /search.html
+
+# table of contents set up
+toc_max: 3
