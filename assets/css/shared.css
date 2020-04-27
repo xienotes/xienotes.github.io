@@ -159,6 +159,11 @@ table tr td:last-child {
     font-size: xx-large;
     text-decoration: none;
 }
+
+a.site-name-text {
+    text-decoration: none;
+}
+
 .header-navigation {
     margin-left: 10px;
     margin-bottom: 10px;
@@ -215,12 +220,19 @@ li.nav-item {
     ul,ol {
         padding-left: 20px;
     }
+    .site-name {
+        text-align: center;
+    }
     .site-name-text {
         font-size: x-large;
     }
+    ul.nav-list {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
     .nav-item a{
         color: whitesmoke;
-        font-size: medium;
         padding: 5px;
         margin-right: 0px;
     }
