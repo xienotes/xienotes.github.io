@@ -4,7 +4,6 @@ title: All about Geotechnical Lectures
 category: DumpSave
 date: 2019-03-26 08:37
 tags: geotechnical-lectures
-description: "Rankine, terzaghi, Seed, Peck, Buchanan, Mindlin, offshore, foundation design, geotechnics, energy, landslides, dynamic, soil-structure, interaction, seismic, geoenvironmental engineering, dam safety, ground deformation, pipelines, geosynthetics, liquefaction, mechanics, slope stability, computation, assessment, sands,  numerical, limit state, unsaturated, strength, foundation settlement, pile, lateral spreading, landfill, geotechnique, issmge, houlsby, jardine, alonso, riordan, gazetas, daniel, hendron, santamarina, bruce, rourke, rowe, martin, wright, finn, robertson, dobry, griffiths, benson, bray, hashash, gray, boulanger, ning lu, peck, meyerhof, mitchell, fredlund, lambe, burland, duncan, poulos, holtz, Aronowitz,Krizek,Baker, stokoe, roesset, ishihara,Bonaparte, marr, whittle, Kavazanjian, dafalias, sullivan"
 ---
 
 *此文档为以前博客文章搬运过来，目前均为网络视频，相关文章后续将逐渐添加。——2020.04.25* 

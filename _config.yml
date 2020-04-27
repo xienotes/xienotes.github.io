@@ -3,7 +3,7 @@ description: "个人笔记"
 author: xieyn
 keywords: [岩土, Mathematica]
 
-exclude: [README.md, Makefile]
+exclude: [README.md, Makefile, vendor]
 
 url: https://xienotes.net
 baseurl: ""
@@ -49,3 +49,13 @@ navigation:
 
 # table of contents set up
 toc_max: 3
+
+# config for Algolia search
+algolia:
+   application_id: "IVH7JFNAZ7"
+   index_name: "xienotes"
+   search_only_api_key: "c9518e033e1e16df88a55d9df7824da7"
+   extensions_to_index: 
+      - html
+      - md
+   nodes_to_index: 'p,blockquote,li,code'
