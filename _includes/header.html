@@ -2,9 +2,16 @@
     <div class="site-name">
         <a class="site-name-text" href='{{ site.baseurl }}/'>{{ site.name }}</a>
     </div>
-    <nav class="header-navigation" id="nav-bar">
+    <nav class="header-navigation">
         {%- for navitem in site.navigation -%}
-            <a class="nav-item" href='{{ site.baseurl }}{{ navitem.url }}'>{{ navitem.name | strip }}</a>
+            {% if forloop.first %}
+                {% assign currentUrl = page.url %}
+            {% else %}
+                {% assign currentUrl = page.url | append: ".html"%}
+            {% endif %}
+            <span class="nav-item">
+                <a  href='{{ navitem.url }}' {% if currentUrl == navitem.url %}class="active"{% endif %}>{{ navitem.name | strip }}</a>
+            </span>            
         {%- endfor -%}
     </nav>
 </header>

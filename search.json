@@ -6,7 +6,6 @@
   {{ post.content | jsonify | strip_html | escape | strip_newlines | replace: "\n", "" | replace: "\", "" | replace: "{","" | replace: "&","" | replace: "@","" | replace:"$","" | replace: "%","" | replace: "  ","" | replace: " ","" }}
   {% endcapture %}
     {
-
       "title"    : "{{ post.title | escape }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
