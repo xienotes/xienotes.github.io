@@ -39,3 +39,12 @@ a.homepage-post-title {
 p.post-exerpt {
     margin-top: 0px !important;
 }
+
+code {
+    border: 1px solid #e7eaed;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    background-color: #f8f8f8;
+}
