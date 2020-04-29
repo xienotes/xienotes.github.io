@@ -31,13 +31,22 @@
         </span>
         </div>
         
-        <div class="post-content">        
-            {% if page.toc %}
+        <div class="post-content">
             <div class="post-toc" >
+                {% if page.toc %}
+                {% if page.lang=="en" %}
+                    <div class="toc-title">
+                        <h3 id="toc-heading">Table of contents</h3>
+                    </div>
+                {% else %}
+                    <div class="toc-title">
+                        <h3 id="toc-heading">目录</h3>
+                    </div>
+                {% endif %}
             {% include toc.html html=content h_max=site.toc_max %}
             </div>
             {% endif %}        
-            {{ content | forcewebp }}
+            {{ content }}
         </div>
         
         
