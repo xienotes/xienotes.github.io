@@ -37,7 +37,7 @@
             {% include toc.html html=content h_max=site.toc_max %}
             </div>
             {% endif %}        
-            {{ content }}
+            {{ content | forcewebp }}
         </div>
         
         
