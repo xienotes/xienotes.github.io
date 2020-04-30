@@ -4,9 +4,9 @@ title: All about Geotechnical Lectures
 category: DumpSave
 date: 2019-03-26 08:37
 tags: geotechnical-lectures
+toc: true
+note: "此文档为旧博客文章搬运过来，目前均为网络视频，相关文章后续将逐渐添加。——2020.04.25"
 ---
-
-*此文档为以前博客文章搬运过来，目前均为网络视频，相关文章后续将逐渐添加。——2020.04.25* 
 
 ## Rankine Lecture
 
