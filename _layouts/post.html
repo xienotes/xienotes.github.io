@@ -17,14 +17,14 @@
             {% if page.category %}
                 <span>
                     &thinsp; 分类:
-                    <a class="post-category" href="{{ site.baseurl }}/categories.html#{{ page.category | slugify | strip }}">{{ page.category | slugify | strip }}</a>
+                    <a class="post-category" href="{{ site.baseurl }}/categories.html#{{ page.category | slugify | strip }}">{{ page.category | strip }}</a>
                 </span>
             {% endif %}
             {% if page.tags %}
                 <span>
                     &ensp; 标签:&nbsp;
                     {% for tags in page.tags %}
-                    <a class="post-tag" href="{{ site.baseurl }}/tags.html#{{ tags | slugify | strip }}">{{ tags | slugify | strip }}</a>&thinsp;
+                    <a class="post-tag" href="{{ site.baseurl }}/tags.html#{{ tags | slugify | strip }}">#{{ tags | slugify | strip }}</a>&thinsp;
                     {% endfor %}
                 </span>
             {% endif %}

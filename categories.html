@@ -9,12 +9,12 @@ title: 分类
 
 {% for category in sort_cat %}
   <a href="#{{ category[0] | slugify }}">
-    {{ category[0] | slugify }}<sup>{{ category[1].size }}</sup>
-  </a>&ensp;
+    {{ category[0] }}<sup>{{ category[1].size }}</sup></a>&ensp;
 {% endfor %}
 
+
 {% for category in sort_cat %}
-  <h3 id="{{ category[0] | slugify }}" class="post-category">{{ category[0] | slugify }} </h3>
+  <h3 id="{{ category[0] | slugify }}" class="post-category">{{ category[0] | strip }} </h3>
   <ul class="category-post-list">
     {% for post in category[1] %}
     <li>

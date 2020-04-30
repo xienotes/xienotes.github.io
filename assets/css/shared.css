@@ -217,6 +217,10 @@ li.nav-item {
     padding-right: 10px;
 }
 
+.larger {
+    font-size: larger
+}
+
 @media screen and (max-width: 768px) {
     ul,ol {
         padding-left: 20px;
