@@ -25,7 +25,8 @@ note: "此文档为旧博客文章搬运过来，目前均为网络视频，相�
 - [**Ground Deformation Effects on Subsurface Pipelines and Infrastructure**](https://www.youtube.com/watch?v=fcJ5Rc7fRNg&t=41s){:target="_blank"} by Thomas D. O'Rourke, 2016
 - [**Protecting the Environment with Geosynthetics: Successes and Challenges**](https://www.youtube.com/watch?v=vyLpkObB1a8&t=270s){:target="_blank"} by Kerry Rowe, 2017
 
-## [Seed Lecture](https://www.asce.org/templates/award-detail.aspx?id=6700&all_recipients=1){:target="_blank"}
+## Seed Lecture
+[Homepage](https://www.asce.org/templates/award-detail.aspx?id=6700&all_recipients=1){:target="_blank"}
 
 - [**Mechanics of Liquefaction and etc. under Seismic Loading**](https://www.youtube.com/watch?v=lIyXXWLRdJc){:target="_blank"} by Geoffrey Robert Martin, 2012
 - [**Slope Stability Computations**](https://www.youtube.com/watch?v=Q_6aOU7msBM&t=24s){:target="_blank"} by Stephen G. Wright, 2013
@@ -43,7 +44,8 @@ note: "此文档为旧博客文章搬运过来，目前均为网络视频，相�
 - [**Liquefaction and Spatial Variability**](https://www.youtube.com/watch?v=Ns6txrlSZYY){:target="_blank"} by Ross W. Boulanger, 2016
 - [**A New Paradigm for Slope Stability Analysis under Variably Saturated Conditions**](https://www.youtube.com/watch?v=Vtq0_KBRD_g){:target="_blank"} by Ning Lu, 2017
 
-## [Buchanan Lecture](https://ceprofs.civil.tamu.edu/briaud/buchanan.html){:target="_blank"}
+## Buchanan Lecture
+[Homepage](https://ceprofs.civil.tamu.edu/briaud/buchanan.html){:target="_blank"}
 
 - [**The Coming of Age of Soil Mechanics: 1920-1970**](https://www.youtube.com/watch?v=NC3PfR7SgOg){:target="_blank"} by Ralph B. Peck, 1993
 - [**Evolution of Safety Factors and Geotechnical Limit State Design**](https://www.youtube.com/watch?v=ksg4t_VIWxc){:target="_blank"} by G. Meyerhof, 1994
