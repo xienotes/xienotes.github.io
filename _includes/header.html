@@ -4,16 +4,17 @@
     </div>
     <nav class="header-navigation">
         <ul class="nav-list">
-        {%- for navitem in site.navigation -%}
-            {% if forloop.first %}
-                {% assign currentUrl = page.url %}
-            {% else %}
-                {% assign currentUrl = page.url | append: ".html"%}
-            {% endif %}
+            {%- for navitem in site.navigation -%}
+                {% if forloop.first %}
+                    {% assign currentUrl = page.url %}
+                {% else %}
+                    {% assign currentUrl = page.url | append: ".html"%}
+                {% endif %}
             <li class="nav-item">
-                <a  href='{{ navitem.url }}' {% if currentUrl == navitem.url %}class="active"{% endif %}>{{ navitem.name | strip }}</a>
+                <a href='{{ navitem.url }}' {% if currentUrl == navitem.url %}class="active"
+                    {% endif %}>{{ navitem.name | strip }}</a>
             </li>
-        {%- endfor -%}
+            {%- endfor -%}
         </ul>
     </nav>
 </header>

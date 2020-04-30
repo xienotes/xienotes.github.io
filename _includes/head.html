@@ -1,9 +1,10 @@
 {%- assign buildtime = site.time | date: "%Y%m%d%H%M%S" -%}
+
 <head>
     <title>
         {% if page.title %}
             {{ page.title }}-{{ site.name }}
-        {% else %} 
+        {% else %}
             {{ site.name }}
         {% endif %}
     </title>
@@ -12,29 +13,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="applicable-device" content="pc,mobile">
     <meta name="author" content="{{ site.author }}" />
-    <meta name="description" content="{{ site.description }}"/>
-    <meta name="keywords" content="{{ site.keywords }}"/>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="{{ site.keywords }}" />
     <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon"/>    
+    <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/shared.css?t={{buildtime}}">
     {%- if page.layout == "post" %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css?t={{buildtime}}">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css?t={{buildtime}}">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css?t={{buildtime}}">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css?t={{buildtime}}">
     {%- endif %}
     {%- if page.layout == "default" %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/default.css?t={{buildtime}}">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/default.css?t={{buildtime}}">
     {%- endif %}
 
     {% comment %}
     <script>
         var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?377326df5767bb30fb17e91250eeffa0";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?377326df5767bb30fb17e91250eeffa0";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
         })();
     </script>
     {% endcomment %}
 
-  </head>
+</head>
