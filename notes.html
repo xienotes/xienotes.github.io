@@ -2,9 +2,18 @@
 layout: default
 title: 碎语
 ---
-{% for note in site.notes %}
-    <span>
-        {{ note.date }}
-    </span><br>
-    {{ note.content }}
+<h2>碎语</h2>
+
+{% assign notes = site.posts | where_exp: "page","page.layout=='micropubpost' "%}
+
+{% for note in notes %}
+<div class="note-container">
+    <div class="note-date">
+        {{ note.date | date: "%Y-%m-%d %H:%M:%S"}}
+    </div>
+    <div class="note-content-container">
+        {{ note.content }}
+    </div>
+    
+</div> 
 {% endfor %}

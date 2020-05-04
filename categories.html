@@ -2,18 +2,20 @@
 layout: default
 title: 分类
 ---
-
 <h2>分类</h2>
 
 {% assign sort_cat = site.categories | sort %}
 
 {% for category in sort_cat %}
+  {% if category[0] != "social" %}
   <a href="#{{ category[0] | slugify }}">
     {{ category[0] }}<sup>{{ category[1].size }}</sup></a>&ensp;
+  {% endif %}
 {% endfor %}
 
 
 {% for category in sort_cat %}
+{% if category[0] != "social" %}
   <h3 id="{{ category[0] | slugify }}" class="post-category">{{ category[0] | strip }} </h3>
   <ul class="category-post-list">
     {% for post in category[1] %}
@@ -25,4 +27,5 @@ title: 分类
     </li>
     {% endfor %}
   </ul>
+{% endif %}
 {% endfor %}

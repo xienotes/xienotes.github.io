@@ -40,6 +40,27 @@ p.post-exerpt {
     margin-top: 0px !important;
 }
 
+.note-container {
+    margin-bottom: 20px;
+}
+.note-container p {
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.note-date {
+    color:rgb(120, 120, 120);
+    font-weight:500;
+}
+
+.note-content-container{
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
 code {
     border: 1px solid #e7eaed;
     border-radius: 3px;

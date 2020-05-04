@@ -2,10 +2,12 @@
 layout: default
 title: 归档
 ---
-<h2>归档</h2>
-共有 {{ site.posts | size }} 篇文章
+{% assign long_posts = site.posts | where_exp: "page","page.layout == 'post' "%}
 
-{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+<h2>归档</h2>
+共有 {{ long_posts | size }} 篇文章
+
+{% assign postsByYear = long_posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 {% for year in postsByYear %}
 <h3 id="{{ year.name }}" class="post-year">{{ year.name }}</h3>

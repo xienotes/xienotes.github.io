@@ -6,10 +6,13 @@ layout: default
 {% endcapture %}
 {{ my_include | markdownify }}
 
+
+{% assign long_posts = site.posts | where_exp: "page","page.layout == 'post' "%}
+
 <section>
   <h3 class="recent-post">最近博文</h3>
   <ul class="homepage-post-list" >
-      {% for post in site.posts limit: site.front_page_post %}
+      {% for post in long_posts limit: site.front_page_post %}
  
         <li class="post-list">
           <div class="homepage-post-metadata">
