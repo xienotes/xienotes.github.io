@@ -8,7 +8,7 @@ exclude: [README.md, Makefile, vendor]
 url: https://xienotes.net
 baseurl: ""
 
-# timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 permalink: /:year/:month/:day/:title.html
 
