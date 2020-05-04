@@ -53,8 +53,8 @@ navigation:
     url: /tags.html
   - name: 收藏
     url: /collections.html
-  - name: 碎语
-    url: /notes.html
+#  - name: 碎语
+#    url: /notes.html
   - name: 搜索
     url: /search.html
 
