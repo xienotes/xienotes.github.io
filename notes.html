@@ -9,7 +9,7 @@ title: 碎语
 {% for note in notes %}
 <div class="note-container">
     <div class="note-date">
-        {{ note.date | date: "%Y-%m-%d %H:%M:%S"}}
+        {{ note.date | date: "%Y-%m-%d %H:%M"}}
     </div>
     <div class="note-content-container">
         {{ note.content }}
