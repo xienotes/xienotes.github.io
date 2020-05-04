@@ -21,16 +21,25 @@ kramdown:
   math_engine: mathjax
   parse_block_html: true
 
+# post to shown in the recent posts in frontpage
 front_page_post: 10
+
+# pagination for notes
+plugins:
+  - jekyll-paginate
+paginate_path: notes/page-:num
+paginate: 50
 
 source: .
 destination: ./_site
 
-#sass:
-#    style: :compressed
-#    sass_dir: assets/css/
-
 excerpt_separator: <!--more-->
+
+# short note collections
+collections:
+  notes:
+    output: true
+    permalink: /notes/:year:month:day:hour:minute:second
 
 # header navigation
 navigation:
@@ -44,6 +53,8 @@ navigation:
     url: /tags.html
   - name: 收藏
     url: /collections.html
+  - name: 碎语
+    url: /notes.html
   - name: 搜索
     url: /search.html
 

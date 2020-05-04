@@ -1,0 +1,10 @@
+---
+layout: default
+title: 碎语
+---
+{% for note in site.notes %}
+    <span>
+        {{ note.date }}
+    </span><br>
+    {{ note.content }}
+{% endfor %}

@@ -53,7 +53,8 @@ search.addWidget(
   instantsearch.widgets.hits({
     container: '#search-hits',
     templates: {
-      item: hitTemplate
+      item: hitTemplate,
+      empty: '<div>没有找到相关文章</div>'
     }
   })
 );
