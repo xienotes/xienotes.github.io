@@ -52,12 +52,13 @@ p.post-exerpt {
 }
 
 .note-date {
-    color:rgb(120, 120, 120);
+    color:rgb(22, 22, 22);
     font-weight:500;
 }
 
 .note-content-container{
     background-color: #f8f8f8;
+    border: 0.3px solid #eee;
     border-radius: 4px;
 }
 
