@@ -65,7 +65,6 @@ p.post-exerpt {
 a.note-link {
     opacity: 0;
     text-decoration: none;
-    font-style: italic;
 }
 
 a.note-link:hover {
