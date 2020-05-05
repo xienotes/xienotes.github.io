@@ -57,9 +57,21 @@ p.post-exerpt {
 }
 
 .note-content-container{
-    background-color: #f8f8f8;
+    background-color: #eeeeee;
     border: 0.3px solid #eee;
     border-radius: 4px;
+}
+
+a.note-link {
+    opacity: 0;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a.note-link:hover {
+    color: black;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out 0.1s;
 }
 
 code {

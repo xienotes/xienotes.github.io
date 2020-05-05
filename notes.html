@@ -10,6 +10,7 @@ title: 碎语
 <div class="note-container">
     <div class="note-date">
         {{ note.date | date: "%Y-%m-%d %H:%M"}}
+        <a class="note-link" href="{{ note.url }}" title="note link">link</a>
     </div>
     <div class="note-content-container">
         {{ note.content }}

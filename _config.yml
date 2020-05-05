@@ -9,6 +9,7 @@ url: https://xienotes.net
 baseurl: ""
 
 timezone: Asia/Shanghai
+future: true
 
 permalink: /:year/:month/:day/:title.html
 
