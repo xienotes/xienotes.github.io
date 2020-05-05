@@ -54,8 +54,6 @@ navigation:
     url: /categories.html
   - name: 标签
     url: /tags.html
-  - name: 收藏
-    url: /collections.html
   - name: 碎语
     url: /notes.html
   - name: 搜索
@@ -73,4 +71,4 @@ algolia:
       - html
       - md
    nodes_to_index: 'p,blockquote,li,code'
-   files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html] 
+   files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md] 

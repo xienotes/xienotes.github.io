@@ -18,8 +18,10 @@ const hitTemplate = function(hit) {
 
   let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
 
-  const title = hit._highlightResult.title.value;
-
+  let title = '';
+  if (hit.title) {
+    title = hit._highlightResult.title.value;
+  }
   let breadcrumbs = '';
   if (hit._highlightResult.headings) {
     breadcrumbs = hit._highlightResult.headings.map(match => {
@@ -29,6 +31,7 @@ const hitTemplate = function(hit) {
 
   const content = hit._highlightResult.html.value;
 
+  if (hit.title) {
   return `
     <div class="post-item">
       <span class="post-date">${date}</span>
@@ -37,7 +40,14 @@ const hitTemplate = function(hit) {
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
       <div class="post-snippet">${content}</div>
     </div>
+  `; } else {
+    return `
+    <div class="post-item">
+      <a class="post-date" href="${url}">${date}</a>
+      <div class="post-snippet">${content}</div>
+    </div>
   `;
+  }
 }
 
 
