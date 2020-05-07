@@ -7,12 +7,9 @@ title: 分类
 {% assign sort_cat = site.categories | sort %}
 
 {% for category in sort_cat %}
-  {% if category[0] != "social" %}
   <a href="#{{ category[0] | slugify }}">
     {{ category[0] }}<sup>{{ category[1].size }}</sup></a>&ensp;
-  {% endif %}
 {% endfor %}
-
 
 {% for category in sort_cat %}
 {% if category[0] != "social" %}

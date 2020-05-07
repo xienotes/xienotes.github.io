@@ -2,7 +2,8 @@
 layout: default
 title: 归档
 ---
-{% assign long_posts = site.posts | where_exp: "page","page.layout == 'post' "%}
+
+{% assign long_posts = site.posts %}
 
 <h2>归档</h2>
 共有 {{ long_posts | size }} 篇文章

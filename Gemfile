@@ -9,5 +9,5 @@ group :jekyll_plugins do
     gem 'tzinfo-data'
 #    gem 'jekyll-webp'
 #    gem 'jekyll-forcewebp', '~> 1.0'
-    gem 'jekyll-paginate'
+#    gem 'jekyll-paginate'
 end

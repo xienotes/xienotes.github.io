@@ -73,6 +73,10 @@ a.note-link:hover {
     transition: opacity 0.2s ease-in-out 0.1s;
 }
 
+.pagination {
+    text-align: center;
+}
+
 code {
     border: 1px solid #e7eaed;
     border-radius: 3px;

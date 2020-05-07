@@ -7,6 +7,8 @@
             {%- for navitem in site.navigation -%}
                 {% if forloop.first %}
                     {% assign currentUrl = page.url %}
+                {% elsif page.url contains "notes" %}
+                    {% assign currentUrl = page.url | append: "index.html"%}
                 {% else %}
                     {% assign currentUrl = page.url | append: ".html"%}
                 {% endif %}

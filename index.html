@@ -6,8 +6,7 @@ layout: default
 {% endcapture %}
 {{ my_include | markdownify }}
 
-
-{% assign long_posts = site.posts | where_exp: "page","page.layout == 'post' "%}
+{% assign long_posts = site.posts %}
 
 <section>
   <h3 class="recent-post">最近博文</h3>

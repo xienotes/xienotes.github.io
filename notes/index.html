@@ -4,9 +4,9 @@ title: 碎语
 ---
 <h2>碎语</h2>
 
-{% assign notes = site.posts | where_exp: "page","page.layout=='micropubpost' "%}
+{% assign sort_notes= site.notes | reverse %}  
 
-{% for note in notes %}
+{% for note in sort_notes %}
 <div class="note-container">
     <div class="note-date">
         {{ note.date | date: "%Y-%m-%d %H:%M"}}
@@ -15,6 +15,5 @@ title: 碎语
     <div class="note-content-container">
         {{ note.content }}
     </div>
-    
-</div> 
+</div>
 {% endfor %}
