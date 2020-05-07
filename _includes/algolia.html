@@ -18,7 +18,12 @@ const hitTemplate = function(hit) {
     date = moment.unix(hit.date).format('YYYY-M-D');
   }
 
-  let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+  let url = '';
+  if (hit.anchor) {
+    url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+  } else {
+    url = `{{ site.baseurl }}${hit.url}`;
+  }
 
   let title = '';
   if (hit.title) {
