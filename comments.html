@@ -1,0 +1,18 @@
+---
+layout: default
+title: 评论
+---
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<div id="comments"></div>
+<script>
+    new Valine({
+        el: '#comments',
+        appId: 'T1b7oMjWobU7fjQaT8NQuz0M-MdYXbMMI',
+        appKey: 'eHKfNDTF9vTvkIAF7jwv52eh',
+        placeholder: '欢迎留言~',
+        pageSize: 50,
+        visitor: false
+    })
+</script>
