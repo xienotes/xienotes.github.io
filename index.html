@@ -6,7 +6,7 @@ layout: default
 {% endcapture %}
 {{ my_include | markdownify }}
 
-{% assign long_posts = site.posts %}
+{% assign long_posts = site.posts | where_exp: "page","page.layout != 'note' " %}
 
 <section>
   <h3 class="recent-post">最近博文</h3>
@@ -28,7 +28,7 @@ layout: default
 
       {% endfor %}
   </ul>
-  {% assign numposts = site.posts | size %}
+  {% assign numposts = long_posts | size %}
   {% if numposts > site.front_page_post %}
       <p>
           <a href="{{ site.base }}/archive.html">更多&hellip;</a>

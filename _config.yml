@@ -28,10 +28,10 @@ kramdown:
 front_page_post: 10
 
 # pagination for notes
-#plugins:
-#  - jekyll-paginate
-#paginate_path: /notes/page-:num
-#paginate: 3
+plugins:
+  - jekyll-paginate
+paginate_path: /notes/page-:num
+paginate: 50
 
 source: .
 destination: ./_site
@@ -39,9 +39,9 @@ destination: ./_site
 excerpt_separator: <!--more-->
 
 # short note collections
-collections:
-  notes:
-    output: true
+#collections:
+#  notes:
+#    output: true
 
 # header navigation
 navigation:
@@ -70,4 +70,4 @@ algolia:
       - html
       - md
    nodes_to_index: 'p,blockquote,li,code'
-   files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md, notes/index.html]
+   files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md, notes/*]

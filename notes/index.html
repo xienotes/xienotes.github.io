@@ -4,9 +4,9 @@ title: 碎语
 ---
 <h2>碎语</h2>
 
-{% assign sort_notes= site.notes | reverse %}
-
-{% for note in sort_notes %}
+<!-- This loops through the paginated posts -->
+{% assign notes = paginator.posts | where_exp: "page","page.layout=='note' "%}
+{% for note in notes %}
 <div class="note-container">
     <div class="note-date">
         {{ note.date | date: "%Y-%m-%d %H:%M"}}
@@ -17,3 +17,27 @@ title: 碎语
     </div>
 </div>
 {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+        &laquo; 上一页
+    </a>
+  {% else %}
+    {% comment %}
+    <span class="previous">&laquo; 上一页</span>
+    {% endcomment %}
+  {% endif %}
+  &nbsp;
+  <span class="page_number ">
+    {{ paginator.page }}/{{ paginator.total_pages }}
+  </span>&nbsp;
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">下一页&raquo;</a>
+  {% else %}
+    {% comment %}
+    <span class="next ">下一页 &raquo;</span>
+    {% endcomment %}
+  {% endif %}
+</div>

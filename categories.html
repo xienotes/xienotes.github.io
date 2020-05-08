@@ -4,7 +4,7 @@ title: 分类
 ---
 <h2>分类</h2>
 
-{% assign sort_cat = site.categories | sort %}
+{% assign sort_cat = site.categories | sort | where_exp: "item","item[0] != 'social'" %}
 
 {% for category in sort_cat %}
   <a href="#{{ category[0] | slugify }}">
