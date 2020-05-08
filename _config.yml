@@ -70,4 +70,4 @@ algolia:
       - html
       - md
    nodes_to_index: 'p,blockquote,li,code'
-   files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md, notes/*]
+   files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md]
