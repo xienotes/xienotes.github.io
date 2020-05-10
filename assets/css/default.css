@@ -42,8 +42,8 @@ p.post-exerpt {
 
 .note-container {
     margin-bottom: 30px;
-    border-bottom: 0.3px solid #eee;
-    box-shadow: 5px 5px 5px #eee;
+    border-bottom: 0.3px solid #d8d8d8;
+    box-shadow: 6px 6px 5px #d8d8d8;
 }
 .note-container p {
     margin: 0px;
@@ -56,10 +56,10 @@ p.post-exerpt {
 .note-date {
     color:rgb(22, 22, 22);
     font-weight:500;
-    background-color: #f2f2f2;
+    background-color: #d8d8d8;
     padding: 2px 5px 2px 5px; 
     border-radius: 10px 1px 0px 0px;
-    border: 0.3px solid #eee;
+    border: 0.3px solid #d8d8d8;
 }
 
 .note-content-container{
