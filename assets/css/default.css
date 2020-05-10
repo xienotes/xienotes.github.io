@@ -84,6 +84,7 @@ a.note-link:hover {
 }
 
 code {
+    font-family: inherit;
     border: 1px solid #e7eaed;
     border-radius: 3px;
     padding: 0;

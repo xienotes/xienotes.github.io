@@ -8,8 +8,22 @@ img {
     margin: 0 auto;
     height: auto;
 }
+img + em { 
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    color: rgb(77,77,77);
+}
+
+img + strong { 
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    color: rgb(77,77,77);
+}
 
 code {
+    font-family: inherit;
     border: 1px solid #e7eaed;
     border-radius: 3px;
     padding: 0;
@@ -19,6 +33,7 @@ code {
 }
 
 pre {
+    font-family: inherit;
     padding: 10px;
     overflow: auto;
     border-radius: 2px;
@@ -29,6 +44,7 @@ pre {
     tab-size: 4;
 }    
 pre code {
+    font-family: inherit;
     background-color: transparent;
     border: none;
     padding: 0;
