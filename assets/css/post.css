@@ -92,3 +92,9 @@ h3#toc-heading {
     text-align: justify;
     text-justify: inter-ideograph;
 }
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
