@@ -8,7 +8,7 @@
 *  [收藏](/collections.html)
 *  [留言](/comments.html)
 
-网站托管于 [Github Pages][github]{:target="_blank"}，采用默认的 [Jekyll][jekyll]{:target="_blank"} 引擎，主题基于 [true minimal][trueminimal]{:target="_blank"} 改动，大概可称作 [pseudo-minimal]({% link _posts/2020-04-25-用GitHub-Pages搭建博客及Jekyll主题设置.md %})。
+网站托管于 [Github Pages][github]{:target="_blank"}，采用默认的 [Jekyll][jekyll]{:target="_blank"} 引擎，主题基于 [true minimal][trueminimal]{:target="_blank"} 改动，大概可称作 [pseudo-minimal]({% link _posts/2020-04-25-github-pages-and-jekyll.md %})。
 
 [github]: https://pages.github.com/
 [jekyll]: https://jekyllrb.com/

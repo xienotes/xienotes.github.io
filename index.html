@@ -9,7 +9,7 @@ layout: default
 {% assign long_posts = site.posts | where_exp: "page","page.layout != 'note' " %}
 
 <section>
-  <h3 class="recent-post">最近博文</h3>
+  <h3 class="recent-post">新近博文</h3>
   <ul class="homepage-post-list" >
       {% for post in long_posts limit: site.front_page_post %}
  
@@ -30,36 +30,8 @@ layout: default
   </ul>
   {% assign numposts = long_posts | size %}
   {% if numposts > site.front_page_post %}
-      <p>
-          <a href="{{ site.base }}/archive.html">更多&hellip;</a>
+      <p class="more">
+          <a href="{{ site.base }}/archive.html">更多博文&hellip;</a>
       </p>
   {% endif %}
 </section>
-
-
-{% comment %}
-
-
-{% for post in paginator.posts %}
-<section>
-  <h2>
-    <a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>
-      {{ post.title }}
-    </a>
-  </h2>
-  
-  <p>{{ post.excerpt | strip_html | truncate: 500 }}</p>
-</section>
-{% endfor %}
-
-{% if paginator.previous_page %}
-<a href='{{ site.baseurl }}{{ paginator.previous_page_path }}'>前一页</a>
-{% endif %}
-
-&mdash; {{ paginator.page }} / {{ paginator.total_pages }} &mdash;
-
-{% if paginator.next_page %}
-<a href='{{ site.baseurl }}{{ paginator.next_page_path }}'>后一页</a>
-{% endif %}
-
-{% endcomment %}
