@@ -69,5 +69,5 @@ algolia:
    extensions_to_index: 
       - html
       - md
-   nodes_to_index: 'p,blockquote,li,code'
+   nodes_to_index: 'p,blockquote,li'
    files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md]

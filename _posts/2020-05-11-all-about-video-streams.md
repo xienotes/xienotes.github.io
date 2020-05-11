@@ -6,9 +6,9 @@ date: 2020-05-11 16:35
 note: "Oh, please, don't get drowned."
 ---
 
-1. [**2veritasium**](https://www.youtube.com/user/2veritasium) An isotope of truth.
-2. [**Applied Science**](https://www.youtube.com/user/bkraz333)
-3. [**AsapSCIENCE**](https://www.youtube.com/channel/UCC552Sd-3nyi_tk2BudLUzA) Your weekly dose of fun and interesting science.
+* [**2veritasium**](https://www.youtube.com/user/2veritasium) An isotope of truth.
+* [**Applied Science**](https://www.youtube.com/user/bkraz333)
+* [**AsapSCIENCE**](https://www.youtube.com/channel/UCC552Sd-3nyi_tk2BudLUzA) Your weekly dose of fun and interesting science.
 * [**At-Bristol Science Centre**](https://www.youtube.com/channel/UCtcvYw27doiyMW4n-sf0r0w)
 * [**BBC Earth**](https://www.youtube.com/user/BBCEarth/featured) Be amazed!
 * [**BBC Earth Lab**](https://www.youtube.com/channel/UCdsOTr6SmDrxuWE7sJFrkhQ) New original science every Thursday.
