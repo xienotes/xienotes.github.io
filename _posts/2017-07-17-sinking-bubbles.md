@@ -3,7 +3,7 @@ layout: post
 title: 下沉的啤酒气泡
 date: 2017-07-17 00:41
 tags: [physics, fluid, mechanics]
-Category: JustForFun
+category: JustForFun
 mathjax: true
 note: "此文档为旧博客搬运。——2020.05.11"
 ---
