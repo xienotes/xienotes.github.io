@@ -20,6 +20,8 @@ sort tag by post count from https://www.gungorbudak.com/blog/2017/12/08/tags-clo
     <a href="#{{ tag | slugify }}" class="post-tag">#{{ tag | slugify }}<sup>{{ count }}</sup></a>&thinsp;
 {% endfor %}
 
+<div class="spacer"></div>
+
 {% assign sort_tag = site.tags | sort %}
 {% for tag in sort_tag %}
   <h3 class="post-tag-heading" id="{{ tag[0] | slugify }}">#{{ tag[0] | slugify }} </h3>

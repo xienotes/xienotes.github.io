@@ -87,7 +87,9 @@ $$
 
 
 **作者**： Lewis Dartnell
+
 **翻译** : sci707
+
 2016年11月7日
 
 **来源** : [https://plus.maths.org/content/how-leopard-got-its-spots](https://plus.maths.org/content/how-leopard-got-its-spots)
