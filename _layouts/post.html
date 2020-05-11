@@ -14,13 +14,13 @@
         <div class="post-metadata" >
         <span>
              发布日期：{{ page.date | date: "%Y-%m-%d %H:%M" }}
-            {% if page.category %}
+            {% if page.category.size > 0 %}
                 <span>
                     &thinsp; 分类:
                     <a class="post-category" href="{{ site.baseurl }}/categories.html#{{ page.category | slugify | strip }}">{{ page.category | strip }}</a>
                 </span>
             {% endif %}
-            {% if page.tags %}
+            {% if page.tags.size > 0 %}
                 <span>
                     &ensp; 标签:&nbsp;
                     {% for tags in page.tags %}
