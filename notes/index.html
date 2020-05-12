@@ -20,7 +20,11 @@ title: 碎语
         {% capture imgfile %}{{ note.date | date: "%Y%m%d" | append: note.slug}}{% endcapture %}
         {% for img in site.static_files %}
           {% if img.path contains "/assets/notes/" and img.name contains imgfile %}
-            <img class="note-image" src={{img.path}} alt="">
+            {% if site.jsdelivr.enabled %}
+              <img class="note-image" src= {{site.jsdelivr.url | append: img.path}} alt="">
+            {% else %}
+              <img class="note-image" src={{img.path}} alt="">
+            {% endif %}
           {% endif %}
         {% endfor %}
     </div>

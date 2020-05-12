@@ -71,3 +71,7 @@ algolia:
       - md
    nodes_to_index: 'p,blockquote,li'
    files_to_exclude: [index.html, archive.html, tags.html, categories.html, search.html,todo.html, todo.md]
+
+jsdelivr:
+  enabled: true
+  url: "https://cdn.jsdelivr.net/gh/xienotes/xienotes.github.io"
