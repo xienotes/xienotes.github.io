@@ -146,6 +146,19 @@ table tr td:last-child {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+img.note-image {
+    display: block;
+    max-width: 60%;
+    margin: 5px auto;
+    height: auto;   
+}
 
 .site-header {
     padding-top: 10px;
