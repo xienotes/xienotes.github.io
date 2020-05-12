@@ -7,10 +7,12 @@ title: 碎语
 <!-- This loops through the paginated posts -->
 {% assign notes = paginator.posts | where_exp: "page","page.layout=='note' "%}
 {% for note in notes %}
+{% capture noteid %}{{ note.date | date: "%Y%m%d" | append: note.slug | strip }}{% endcapture %} 
+
 <div class="note-container">
-    <div class="note-date">
+    <div class="note-date" id={{ noteid }}>
         {{ note.date | date: "%Y-%m-%d %H:%M"}}
-        <a class="note-link" href="{{ note.url }}" title="note link">link</a>
+        <a class="note-link" href="#{{ noteid }}" title="note anchor">anchor</a>
     </div>
     <div class="note-content-container">
         {{ note.content }}
