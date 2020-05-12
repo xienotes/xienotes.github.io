@@ -156,7 +156,7 @@ img {
 img.note-image {
     display: block;
     max-width: 60%;
-    margin: 5px auto;
+    margin: 0px auto 10px auto;
     height: auto;   
 }
 
