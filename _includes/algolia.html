@@ -9,7 +9,13 @@ const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
   apiKey: '{{ site.algolia.search_only_api_key }}',
   indexName: '{{ site.algolia.index_name }}',
-  routing: true
+  routing: true,
+  searchFunction(helper) {
+    const container = document.querySelector('#search-hits');
+    container.style.display = helper.state.query === '' ? 'none' : '';
+
+    helper.search();
+  }
 });
 
 const hitTemplate = function(hit) {
