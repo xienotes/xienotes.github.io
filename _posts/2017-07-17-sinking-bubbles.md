@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 下沉的啤酒气泡
 date: 2017-07-17 00:41
 tags: [physics, fluid, mechanics]

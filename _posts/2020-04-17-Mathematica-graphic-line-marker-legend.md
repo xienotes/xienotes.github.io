@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: Mathematica Plot “自制图例”
 date: 2020-04-17 08:59
 tags: [Mathematica]

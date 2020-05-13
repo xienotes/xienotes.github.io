@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: Mathematica plot of Lorenz system
 date: 2017-06-30 10:08
 category: CodePlay

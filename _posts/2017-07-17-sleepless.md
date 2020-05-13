@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 睡不着
 date: 2017-07-17 03:40
 tags: 感冒

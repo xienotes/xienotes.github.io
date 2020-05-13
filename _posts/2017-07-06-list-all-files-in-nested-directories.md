@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 批处理列出所有子文件夹中的文件名
 date: 2017-07-06 16:35
 tags: [batch, bash]

@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: All about Geotechnical Lectures
 category: DumpSave
 date: 2019-03-26 08:37

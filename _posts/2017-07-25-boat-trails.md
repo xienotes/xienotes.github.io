@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 船只经过后的平静水面
 date: 2017-07-25 0:34
 tags: [mechanics, fluid, wave, physics]

@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: Super glue and safety match
 date: 2017-06-10 00:00
 category: BlahBulah

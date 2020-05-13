@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 批量去除图片的白边
 category: HandyTools
 date: 2020-05-10 09:27

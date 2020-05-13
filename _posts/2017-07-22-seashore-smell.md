@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 大海的气味
 date: 2017-07-22 02:25
 tags: [chemistry, smell]

@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: “自愈”混凝土
 date: 2017-06-03 00:00
 tags: 建筑材料

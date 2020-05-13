@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: “豹纹”是如何形成的
 date: 2017-06-03 00:00
 tags: [maths, model]

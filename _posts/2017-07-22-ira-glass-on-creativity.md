@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 鸿沟
 date: 2017-07-22 16:04
 tags: [creativity, taste]

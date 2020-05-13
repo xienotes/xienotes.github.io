@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: 《啥是佩奇》之 Mathematica 版
 date: 2019-01-24 20:06
 tags: Mathematica

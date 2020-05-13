@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: All about maths
 category: DumpSave
 date: 2020-05-11 16:40

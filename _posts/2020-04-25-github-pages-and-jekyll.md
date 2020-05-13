@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: "用GitHub-Pages搭建博客及Jekyll主题设置"
 date: 2020-04-25 20:21
 tags: [github-pages, jekyll]
