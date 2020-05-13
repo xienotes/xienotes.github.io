@@ -24,8 +24,8 @@ where $x$, $y$ and $z$ are the system state, $t$ is time, and $\sigma$, $\rho$, 
 
 The above ODE system can be solved by the following code in Mathematica: 
 
-{% raw %}
 ```mathematica
+{% raw %}
 tend = 100;
 eq = {x'[t] == \[Sigma] (y[t] - x[t]), 
    y'[t] == x[t] (\[Rho] - z[t]) - y[t], 
@@ -37,12 +37,17 @@ pars = {\[Sigma] -> 10, \[Rho] -> 28, \[Beta] -> 8/3};
   NDSolveValue[{eq /. pars, init1}, {x, y, z}, {t, 0, tend}];
 {xs2, ys2, zs2} = 
   NDSolveValue[{eq /. pars, init2}, {x, y, z}, {t, 0, tend}];
-  
+{% endraw %}
+``` 
+
+```mathematica
+{% raw %}
 ParametricPlot3D[{{xs1[t], ys1[t], zs1[t]}, {xs2[t], ys2[t], 
    zs2[t]}}, {t, 0, tend}, PlotStyle -> {Red, Blue}, 
  PlotPoints -> {1000, 1000}, Boxed -> False, Axes -> False]
-```
 {% endraw %}
+```
+
 
 A beautiful (well, the rendering color is not...) butterfly is traced out by the above code:
 
