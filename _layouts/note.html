@@ -4,4 +4,15 @@ layout: default
 <h2>{{ page.date | date: "%Y-%m-%d %H:%M" }}</h2>
 {{ content }}
 
+{% capture imgfile %}{{ page.date | date: "%Y%m%d" | append: page.slug}}{% endcapture %}
+        {% for img in site.static_files %}
+          {% if img.path contains "/assets/notes/" and img.name contains imgfile %}
+            {% if site.jsdelivr.enabled %}
+              <img class="note-image" src= {{site.jsdelivr.url | append: img.path}} alt="">
+            {% else %}
+              <img class="note-image" src={{img.path}} alt="">
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
 {% include mathjax.html %}
