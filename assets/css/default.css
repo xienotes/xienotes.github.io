@@ -86,6 +86,12 @@ a.note-link:hover {
     text-align: center;
 }
 
+
+.gray-previous,
+.gray-next {
+    color: gray;
+}
+
 code {
     font-family: inherit;
     border: 1px solid #e7eaed;

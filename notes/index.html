@@ -31,6 +31,7 @@ title: 碎语
 </div>
 {% endfor %}
 
+{% if paginator.total_pages > 1 %}
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -38,9 +39,7 @@ title: 碎语
         &laquo; 上一页
     </a>
   {% else %}
-    {% comment %}
-    <span class="previous">&laquo; 上一页</span>
-    {% endcomment %}
+    <span class="gray-previous">&laquo; 上一页</span>
   {% endif %}
   &nbsp;
   <span class="page_number ">
@@ -49,8 +48,7 @@ title: 碎语
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">下一页&raquo;</a>
   {% else %}
-    {% comment %}
-    <span class="next ">下一页 &raquo;</span>
-    {% endcomment %}
+    <span class="gray-next ">下一页 &raquo;</span>
   {% endif %}
 </div>
+{% endif %}
