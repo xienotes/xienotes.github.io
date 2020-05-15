@@ -7,7 +7,6 @@
 部分链接：
 *  [收藏](/collections.html)
 *  [书签](/bookmarks.html)
-*  [留言](/comments.html)
 
 网站托管于 [Github Pages][github]{:target="_blank"}，采用默认的 [Jekyll][jekyll]{:target="_blank"} 引擎，主题基于 [true minimal][trueminimal]{:target="_blank"} 改动，大概可称作 [pseudo-minimal]({% link _posts/2020-04-25-github-pages-and-jekyll.md %})。
 
