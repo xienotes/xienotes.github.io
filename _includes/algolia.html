@@ -42,10 +42,27 @@ const hitTemplate = function(hit) {
     }).join(' > ')
   }
 
+  let postnote = '';
+  if (hit._highlightResult.note.matchLevel != "none") {
+    postnote = hit._highlightResult.note.value;
+  }
+
   const content = hit._highlightResult.html.value;
 
   if (hit.title) {
-  return `
+    if (hit._highlightResult.note.matchLevel != "none" ) {
+      return `
+    <div class="post-item">
+      <span class="post-date">${date}</span>
+      <br>
+      <a class="homepage-post-title" href="${url}">${title}</a>
+      <div class="post-note-text">${postnote}</div>
+      {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
+      <div class="post-snippet">${content}</div>
+    </div>
+  `;       
+    } else {
+      return `
     <div class="post-item">
       <span class="post-date">${date}</span>
       <br>
@@ -53,7 +70,9 @@ const hitTemplate = function(hit) {
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
       <div class="post-snippet">${content}</div>
     </div>
-  `; } else {
+  `; 
+    }
+  } else {
     return `
     <div class="post-item">
       <a class="post-date" href="${url}">${date}</a>

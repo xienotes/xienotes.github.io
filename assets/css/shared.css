@@ -240,6 +240,16 @@ li.nav-item {
     padding: 0.1em 0.3em;
 }
 
+.post-note {
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.post-note-text {
+    font-style: italic;
+    color:rgb(120, 120, 120);
+}
+
 .footnotes {
     margin-top: 40px;
     border-top: 0.3px solid #eee;

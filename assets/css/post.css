@@ -57,16 +57,6 @@ pre code {
     margin-bottom: 20px;
 }
 
-.post-note {
-    text-align: justify;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.post-note-text {
-    font-style: italic;
-    color:rgb(120, 120, 120);
-}
-
 .post-toc {
     padding-bottom: 10px;
     margin-top: 5px;
