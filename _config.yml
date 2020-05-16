@@ -70,7 +70,7 @@ algolia:
       - html
       - md
    nodes_to_index: 'p,blockquote,li'
-   files_to_exclude: [index.html, archive.html, search.html,todo.html, todo.md]
+   files_to_exclude: [index.html, notes/*.html,archive.html, search.html,todo.html, todo.md]
 
 jsdelivr:
   enabled: true

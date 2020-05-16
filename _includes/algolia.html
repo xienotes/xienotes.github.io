@@ -51,7 +51,11 @@ const hitTemplate = function(hit) {
     }
   }
 
-  const content = hit._highlightResult.html.value;
+  let content = '';
+  if (hit._highlightResult.html) {
+    content = hit._highlightResult.html.value;
+  }
+  //const content = hit._highlightResult.html.value;
 
   if (hit.title && hitnote) {
     return `
