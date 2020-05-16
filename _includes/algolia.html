@@ -43,15 +43,18 @@ const hitTemplate = function(hit) {
   }
 
   let postnote = '';
-  if (hit._highlightResult.note.matchLevel != "none") {
-    postnote = hit._highlightResult.note.value;
+  let hitnote = false;
+  if (hit._highlightResult.note) {
+    if (hit._highlightResult.note.matchLevel != "none") {
+      postnote = hit._highlightResult.note.value;
+      hitnote = true;
+    }
   }
 
   const content = hit._highlightResult.html.value;
 
-  if (hit.title) {
-    if (hit._highlightResult.note.matchLevel != "none" ) {
-      return `
+  if (hit.title && hitnote) {
+    return `
     <div class="post-item">
       <span class="post-date">${date}</span>
       <br>
@@ -60,8 +63,29 @@ const hitTemplate = function(hit) {
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
       <div class="post-snippet">${content}</div>
     </div>
-  `;       
-    } else {
+    `;
+  } else if (hit.category == "social") {
+    return `
+    <div class="post-item">
+      <a class="post-date" href="${url}">${date}</a>
+      <div class="post-snippet">${content}</div>
+    </div>
+  `;
+  } else {
+    return `
+    <div class="post-item">
+      <span class="post-date">${date}</span>
+      <br>
+      <a class="homepage-post-title" href="${url}">${title}</a>
+      {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
+      <div class="post-snippet">${content}</div>
+    </div>
+    `;
+  }
+}  
+
+/*
+  if (hit.title) {
       return `
     <div class="post-item">
       <span class="post-date">${date}</span>
@@ -70,8 +94,7 @@ const hitTemplate = function(hit) {
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
       <div class="post-snippet">${content}</div>
     </div>
-  `; 
-    }
+    `;
   } else {
     return `
     <div class="post-item">
@@ -81,6 +104,7 @@ const hitTemplate = function(hit) {
   `;
   }
 }
+*/
 
 search.addWidget(
   instantsearch.widgets.searchBox({
