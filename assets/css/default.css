@@ -16,6 +16,11 @@ h3.post-tag,
 h3.post-category {
     margin-bottom:5px;
 }
+.year-count {
+    font-size: medium;
+    font-weight: normal;
+    color: gray;
+}
 h3.recent-post {
     margin-top: 20px;
     margin-bottom: 0px;

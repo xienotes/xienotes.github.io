@@ -11,7 +11,7 @@ title: 归档
 {% assign postsByYear = long_posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 {% for year in postsByYear %}
-<h3 id="{{ year.name }}" class="post-year">{{ year.name }}</h3>
+<h3 id="{{ year.name }}" class="post-year">{{ year.name }} <span class="year-count">({{year.items.size}})</span></h3>
 <ul  class="year-post-list" >
   {% for post in year.items %}
   <li>
