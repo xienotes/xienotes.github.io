@@ -6,6 +6,7 @@ date: 2017-11-09 15:30
 tags: Mathematica
 category: CodePlay
 mathjax: true
+note: "此文为旧博客搬运。 ——2020.05.17"
 ---
 
 前不久同学询问关于前期勘察的一个问题：
