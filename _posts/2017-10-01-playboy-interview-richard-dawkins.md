@@ -1,7 +1,7 @@
 ---
 layout: post
 hidden: true
-title: Playboy Interview of Richard Dawkins
+title: Playboy's Interview of Richard Dawkins
 date: 2017-10-01 09:54
 tags: [interview, Richard Dawkins, atheist]
 category: JustForFun
