@@ -21,6 +21,13 @@ h3.post-category {
     font-weight: normal;
     color: gray;
 }
+
+.note-count {
+    font-size: 1.0rem;
+    font-weight: normal;
+    color: gray;
+}
+
 h3.recent-post {
     margin-top: 20px;
     margin-bottom: 0px;

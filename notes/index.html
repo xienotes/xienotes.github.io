@@ -2,7 +2,7 @@
 layout: default
 title: 碎语
 ---
-<h2>碎语</h2>
+<h2>碎语 <span class="note-count">共 {{ site.posts | where:"layout","note" | size }} 条</span></h2>
 
 <!-- This loops through the paginated posts -->
 {% assign notes = paginator.posts | where_exp: "page","page.layout=='note' "%}
