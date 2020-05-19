@@ -31,7 +31,7 @@ front_page_post: 10
 plugins:
   - jekyll-paginate
 paginate_path: /notes/page-:num
-paginate: 42
+paginate: 30
 
 source: .
 destination: ./_site
