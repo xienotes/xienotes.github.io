@@ -107,16 +107,6 @@ a.note-link:hover {
     color: gray;
 }
 
-code {
-    font-family: inherit;
-    border: 1px solid #e7eaed;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-    background-color: #f8f8f8;
-}
-
 p.more {
     font-size: 1.2em;
 }

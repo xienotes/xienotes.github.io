@@ -22,36 +22,6 @@ img + strong {
     color: rgb(77,77,77);
 }
 
-code {
-    font-family: inherit;
-    border: 1px solid #e7eaed;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-    background-color: #f8f8f8;
-}
-
-pre {
-    font-family: inherit;
-    padding: 10px;
-    overflow: auto;
-    border-radius: 2px;
-    background-color: #f8f8f8;
-    max-height: 610px;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-}    
-pre code {
-    font-family: inherit;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
-}
-
 .post-metadata {
     color:rgb(120, 120, 120);
     margin-bottom: 20px;
