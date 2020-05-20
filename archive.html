@@ -15,8 +15,9 @@ title: 归档
 <ul  class="year-post-list" >
   {% for post in year.items %}
   <li>
-		<span>{{ post.date | date: '%m-%d' }}</span>&nbsp;
-		<a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+    <span class="archive-post-title">{{ post.date | date: '%m-%d' }}&nbsp;
+    <a href="{{site.baseurl}}{{ post.url }}" >{{ post.title }}</a>
+    </span>
   </li>
   {% endfor %}
 </ul>

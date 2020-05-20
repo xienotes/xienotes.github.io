@@ -11,6 +11,11 @@ ul.category-post-list {
     margin-top:5px;
 }
 
+.archive-post-title {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
 h3.post-year,
 h3.post-tag,
 h3.post-category {
