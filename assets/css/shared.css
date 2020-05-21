@@ -310,6 +310,7 @@ li.nav-item {
     display: block;
     width: 80%;
     max-width: 700px;
+    touch-action: pan-x pan-y pinch-zoom;
 }
  
 @keyframes zoom {
