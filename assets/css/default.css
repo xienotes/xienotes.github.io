@@ -103,9 +103,15 @@ a.note-link:hover {
 
 .page-input {
     width: 35px;
+    height: 16px;
     text-align: center;
 }
-
+#myBtn {
+    border: none;
+    color: black;
+    background-color: #e7e7e7;
+    padding: 1.0px 5px;
+}
 .gray-previous,
 .gray-next {
     color: gray;

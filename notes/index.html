@@ -47,6 +47,7 @@ title: 碎语
   </span>
   <input id="pageinput" class="page-input" value="" placeholder="页码">
   <button id="myBtn" onclick="pageRedirect()">Go</button>
+  &nbsp;
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">下一页&raquo;</a>
   {% else %}
