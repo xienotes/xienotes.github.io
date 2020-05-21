@@ -101,6 +101,10 @@ a.note-link:hover {
     text-align: center;
 }
 
+.page-input {
+    width: 35px;
+    text-align: center;
+}
 
 .gray-previous,
 .gray-next {

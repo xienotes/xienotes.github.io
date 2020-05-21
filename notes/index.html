@@ -44,7 +44,9 @@ title: 碎语
   &nbsp;
   <span class="page_number ">
     {{ paginator.page }}/{{ paginator.total_pages }}
-  </span>&nbsp;
+  </span>
+  <input id="pageinput" class="page-input" value="" placeholder="页码">
+  <button id="myBtn" onclick="pageRedirect()">Go</button>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">下一页&raquo;</a>
   {% else %}
@@ -54,3 +56,5 @@ title: 碎语
 {% endif %}
   
 {% include modalImage.html %}
+
+<script src="/assets/js/notePageRedirect.js"></script>
