@@ -37,7 +37,7 @@ h3.post-category {
 h3.recent-post {
     margin-top: 20px;
     margin-bottom: 0px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(215, 215, 215);
 }
 
 li.post-list {
