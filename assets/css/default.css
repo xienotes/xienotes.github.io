@@ -61,7 +61,7 @@ p.post-exerpt {
     margin-bottom: 30px;
     border-bottom: 0.3px solid #d8d8d8;
     box-shadow: 5px 5px 5px #d8d8d8;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 3px 3px;
 }
 .note-container p {
     margin: 0px;
@@ -74,12 +74,13 @@ p.post-exerpt {
 }
 
 .note-date {
-    color:rgb(22, 22, 22);
+    color:rgb(75, 75, 75);
     font-weight:500;
-    background-color: #d8d8d8;
+    background-color: #e8e8e8;
     padding: 2px 15px 2px 15px; 
-    border-radius: 10px 10px 0px 0px;
-    border: 0.3px solid #d8d8d8;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 0.2px solid #d8d8d8;
+    border-top: 0.2px solid #d8d8d8;
 }
 
 .note-content-container {
