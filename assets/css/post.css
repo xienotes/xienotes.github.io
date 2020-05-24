@@ -31,9 +31,9 @@ img + strong {
     padding-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
-    background-color: #f8f8f8;
+    background-color: #efefef;
     border: 0.2px solid #eee;
-    border-radius: 2px;;
+    border-radius: 3px;
 }
 
 .post-toc ul {

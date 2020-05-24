@@ -170,7 +170,7 @@ code {
     padding: 0;
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
-    background-color: #f8f8f8;
+    background-color: #efefef;
 }
 
 pre {
@@ -178,7 +178,7 @@ pre {
     padding: 10px;
     overflow: auto;
     border-radius: 2px;
-    background-color: #f8f8f8;
+    background-color: #efefef;
     max-height: 610px;
     -moz-tab-size: 4;
     -o-tab-size: 4;
