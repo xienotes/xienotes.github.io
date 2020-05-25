@@ -267,11 +267,12 @@ li.nav-item {
     font-size: larger
 }
 
-.post-tag {
+a.post-tag {
     background-color: #d4e6f7;
-    padding: 0.1em 0.3em;
+    padding: 0.2em 0.3em;
     border-radius: 2px;
-    word-wrap: none;
+    line-height: 1.6rem;
+    word-break: keep-all;
 }
 
 .post-note {
