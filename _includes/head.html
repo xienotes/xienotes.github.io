@@ -1,4 +1,3 @@
-{%- assign buildtime = site.time | date: "%Y%m%d%H%M%S" -%}
 {% if site.jsdelivr.enabled %}
     {% assign siteAssetUrl = site.jsdelivr.url %}
 {% else %}
@@ -22,16 +21,16 @@
     <meta name="keywords" content="{{ site.keywords }}" />
     <link rel="icon" href="{{siteAssetUrl}}/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="{{siteAssetUrl}}/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/shared.css?t={{buildtime}}">
+    <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/shared.css">
     {%- if page.layout == "post" %}
-        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/post.css?t={{buildtime}}">
-        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/syntax.css?t={{buildtime}}">
+        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/post.css">
+        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/syntax.css">
     {%- endif %}
     {%- if page.layout == "default" %}
-        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/default.css?t={{buildtime}}">
+        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/default.css">
     {%- endif %}
     {%- if page.layout == "note" %}
-        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/post.css?t={{buildtime}}">
+        <link rel="stylesheet" href="{{siteAssetUrl}}/assets/css/post.css">
     {%- endif %}
 
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
