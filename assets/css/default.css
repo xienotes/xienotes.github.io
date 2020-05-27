@@ -76,7 +76,7 @@ p.post-exerpt {
     color:rgb(121, 121, 121);
     font-weight:500;
     background-color: #e8e8e8;
-    padding: 2px 15px 2px 15px; 
+    padding: 2px 0px 2px 5px; 
     border-radius: 2px 2px 2px 2px;
     /* border-bottom: 0.2px solid #d8d8d8;
     border-top: 0.2px solid #d8d8d8; */
@@ -94,7 +94,7 @@ p.post-exerpt {
     box-shadow: 5px 5px 5px #d8d8d8;
     padding-left: 10px;
     padding-right: 10px;
-    flex: 0 0 65%;
+    flex: 0 0 70%;
     order: 1;
 }
 a.note-link {
@@ -110,7 +110,7 @@ a.note-link:hover {
 
 .pagination {
     text-align: center;
-    width: 65%;
+    width: 70%;
     margin-left: 0px;
     margin-right: auto;
 }
