@@ -59,9 +59,8 @@ p.post-exerpt {
     /*margin-left: 40px; */
     margin-right: 5px;
     margin-bottom: 30px;
-    border-bottom: 0.3px solid #d8d8d8;
-    box-shadow: 5px 5px 5px #d8d8d8;
     border-radius: 5px 5px 3px 3px;
+    display: flex;
 }
 .note-container p {
     margin: 0px;
@@ -74,18 +73,28 @@ p.post-exerpt {
 }
 
 .note-date {
-    color:rgb(75, 75, 75);
+    color:rgb(80,80,80);
     font-weight:500;
     background-color: #e8e8e8;
     padding: 2px 15px 2px 15px; 
-    border-radius: 5px 5px 0px 0px;
+    /* border-radius: 3px 3px 3px 3px; */
     border-bottom: 0.2px solid #d8d8d8;
     border-top: 0.2px solid #d8d8d8;
+    box-shadow: 3px 3px 3px #d8d8d8;
+    margin-left: 15px;
+    flex: 1;
+    order: 2;
+    align-self: flex-start;
 }
 
 .note-content-container {
+    border: 0.2px solid #d8d8d8;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 5px 5px 5px #d8d8d8;
     padding-left: 10px;
     padding-right: 10px;
+    flex: 0 0 65%;
+    order: 1;
 }
 a.note-link {
     opacity: 0;
@@ -100,6 +109,9 @@ a.note-link:hover {
 
 .pagination {
     text-align: center;
+    width: 65%;
+    margin-left: 0px;
+    margin-right: auto;
 }
 
 .page-input {
@@ -128,14 +140,28 @@ p.more {
 
 @media screen and (max-width: 768px) {
     .note-date {
-        padding: 2px 10px 2px 10px; 
+        padding: 2px 10px 2px 10px;
+        order: 1;
+        margin-left: 0px;
+        box-shadow: 0px 0px 0px #d8d8d8;
+        border: 0.2px solid #d8d8d8;
     }
     .note-container {
         margin-left: 0px;
         margin-right: 2px;
+        flex-direction: column;
+        
     }
     .note-content-container {
         padding-left: 5px;
         padding-right: 5px;
-    }    
+        width: 0 0 100%;
+        order: 2;
+        border-radius: 0px 3px 3px 3px;
+    }
+    .pagination {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
