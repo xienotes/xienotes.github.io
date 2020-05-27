@@ -78,8 +78,9 @@ p.post-exerpt {
     background-color: #e8e8e8;
     padding: 2px 15px 2px 15px; 
     border-radius: 2px 2px 2px 2px;
-    border-bottom: 0.2px solid #d8d8d8;
-    border-top: 0.2px solid #d8d8d8;
+    /* border-bottom: 0.2px solid #d8d8d8;
+    border-top: 0.2px solid #d8d8d8; */
+    border: 0.1px solid #d8d8d8;
     box-shadow: 3px 3px 3px #d8d8d8;
     margin-left: 15px;
     flex: 1;
