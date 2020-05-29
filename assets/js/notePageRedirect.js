@@ -1,9 +1,11 @@
 var input = document.getElementById("pageinput");
+var ph = input.placeholder;
 input.addEventListener("focus", function() {
+  input.placeholder = "";
   input.value = "";
 });
 input.addEventListener("focusout", function() {
-  input.value = input.placeholder;
+  input.value = ph;
 });
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
