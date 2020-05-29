@@ -35,19 +35,19 @@ title: 碎语
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-        &laquo; 上一页
-    </a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; 上一页</a>
   {% else %}
     <span class="gray-previous">&laquo; 上一页</span>
   {% endif %}
-  &nbsp;
+  {% comment %}
   <span class="page_number ">
     {{ paginator.page }}/{{ paginator.total_pages }}
   </span>
-  <input id="pageinput" class="page-input" value="" placeholder="页码">
+  {% endcomment %}
+  <input id="pageinput" class="page-input" value="" placeholder="{{ paginator.page }}/{{ paginator.total_pages }}">
+  {% comment %}
   <button id="myBtn" onclick="pageRedirect()">Go</button>
-  &nbsp;
+  {% endcomment %}
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">下一页&raquo;</a>
   {% else %}
@@ -58,4 +58,9 @@ title: 碎语
   
 {% include modalImage.html %}
 
-<script src="/assets/js/notePageRedirect.js"></script>
+
+{% if site.jsdelivr.enabled %}
+    <script src="{{site.jsdelivr.url}}/assets/js/notePageRedirect.js"></script>
+{% else %}
+    <script src="/assets/js/notePageRedirect.js"></script>
+{% endif %}
