@@ -7,11 +7,9 @@
 部分链接：
 *  [收藏](/collections.html)
 *  [书签](/bookmarks.html)
-*  [旧博客][oldblog]{:target="_blank"}
 
 网站托管于 [Github Pages][github]{:target="_blank"}，采用默认的 [Jekyll][jekyll]{:target="_blank"} 引擎，主题基于 [true minimal][trueminimal]{:target="_blank"} 改动，大概可称作 ~~quasi-minimal~~ [pseudo-minimal]({% link _posts/2020-04-25-github-pages-and-jekyll.md %})。
 
 [github]: https://pages.github.com/
 [jekyll]: https://jekyllrb.com/
 [trueminimal]: https://github.com/cyevgeniy/jekyll-true-minimal/
-[oldblog]: https://ehippocampus.xyz/
