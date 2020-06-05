@@ -11,7 +11,7 @@ toc: true
 
 前两天意外在电视上看了很火的短视频《[啥是佩奇](https://www.bilibili.com/video/av41085787/){:target="_blank"}》，感觉还挺有意思，尤其是最后鼓风机版佩奇出场的时候，颇有点黑客精神的味道。于是我就在想可否用 Mathematica 也画一个佩奇。网上简单搜了下，有用 Python 模拟画板一笔一笔画的，有用 CSS 渲染的，也有用 Mathematica 画不同曲线组合合成。CSS 渲染还算有点好玩，用 Python 和 Mathematica 模拟画板就有侮辱代码的嫌疑了。然后不知怎的就联想到了 `Wolfram|Alpha` 的 [person curves](https://www.wolframalpha.com/input/?i=person+curves){:target="_blank"} ，用一些很复杂的式子画出名人的轮廓图，于是问题就转变为寻找画佩奇轮廓的公式表达式。当然，首先确认了下 `Wolfram|Alpha` 上没有佩奇（Peppa Pig）的曲线。
 
-![Peppa Pig Snapshot](/assets/peppapigfrommovie.jpg)
+![Peppa Pig Snapshot](/assets/img/peppapigfrommovie.jpg)
 *《啥是佩奇》中的“鼓风机版”佩奇*
 
 当然，轮子是不用再去造的——想来自己去造也不一定造得出来——官方博客也给出了用傅立叶级数近似的做法（见文末的[第一个链接](http://blog.wolframalpha.com/2013/06/10/using-formulas-for-everything-from-a-complex-analysis-class-to-political-cartoons-to-music-album-covers/){:target="_blank"}）。本文的代码几乎都来自该文，so, all credit goes to the author of the essay！
@@ -26,7 +26,7 @@ toc: true
 
 这里我稍微作弊了下，我选择的佩奇图像是一幅简单的素描：
 
-![peppapigsketch](/assets/peppapigsketch.png)
+![peppapigsketch](/assets/img/peppapigsketch.png)
 
 在 Notebook 里面，让 `peppaPigImage = ` 上面这幅图。
 
@@ -36,7 +36,7 @@ toc: true
 peppaPigEdgeImage = EdgeDetect[peppaPigImage]
 ```
 
-![peppapigedge](/assets/peppapigedge.png)
+![peppapigedge](/assets/img/peppapigedge.png)
 
 再确定轮廓线上所有的点：
 
@@ -122,7 +122,7 @@ Graphics[{ColorData["DarkRainbow"][RandomReal[]], Line[#]} &  /@
   hLines]
 ```
 
-![peppapigrandomcolor](/assets/peppapigrandomcolor.png)
+![peppapigrandomcolor](/assets/img/peppapigrandomcolor.png)
 
 ## 傅立叶近似各曲线
 
@@ -260,10 +260,10 @@ makeFourierSeriesApproximationManipulate[fCs]
 
 可以得到不同阶数近似的佩奇：
 
-![peppapigorder5](/assets/peppapigorder5.JPG)
-![peppapigorder15](/assets/peppapigorder15.JPG)
-![peppapigorder30](/assets/peppapigorder30.JPG)
-![peppapigorder60](/assets/peppapigorder60.JPG)
+![peppapigorder5](/assets/img/peppapigorder5.JPG)
+![peppapigorder15](/assets/img/peppapigorder15.JPG)
+![peppapigorder30](/assets/img/peppapigorder30.JPG)
+![peppapigorder60](/assets/img/peppapigorder60.JPG)
 
 ## 其他
 

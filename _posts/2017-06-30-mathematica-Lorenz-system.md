@@ -51,7 +51,7 @@ ParametricPlot3D[{{xs1[t], ys1[t], zs1[t]}, {xs2[t], ys2[t],
 
 A beautiful (well, the rendering color is not...) butterfly is traced out by the above code:
 
-![butterfly](/assets/butterfly.jpg){:width="60%"}
+![butterfly](/assets/img/butterfly.jpg){:width="60%"}
 
 For further description of the system and code, please refer to <https://en.wikipedia.org/wiki/Lorenz_system>{:target="_blank"}
 

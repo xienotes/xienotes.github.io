@@ -37,7 +37,7 @@ img = Import["http://i.imgur.com/M5tCc.jpg"];
 HighlightImage[img, {"Boundary", EdgeForm[Thick], Cyan, Rectangle @@@ FindFaces[#] &}]
 ```
 
-<img src="/assets/solvay-findfaces.jpg">
+<img src="/assets/img/solvay-findfaces.jpg">
 *用 `FindFaces` 这时可以把人脸都识别出来，但是也把不是人脸的识别为人脸了*
 
 还好，我们可以通过调节用于人脸识别的算法文件来控制人脸识别的准确度。
@@ -63,7 +63,7 @@ findfeatures[image_, file_, opts___] := Module[{features},
 findfeatures[img, "haarcascade_frontalface_alt2.xml",  "ScaleDecreaseFraction" -> 0.8]
 ```
 
-<img src="/assets/solvay-findfeatures.jpg">
+<img src="/assets/img/solvay-findfeatures.jpg">
 *指定 `TrainingFile` 和 `ScaleDecreaseFraction` 后的人脸识别*
 
 更多内容参见 [StackExchange](https://mathematica.stackexchange.com/questions/16686/findfaces-how-to-improve-the-results-of-the-face-recognition-feature){:target="_blank"} 原帖。

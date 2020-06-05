@@ -10,7 +10,7 @@ note: "此文档为旧博客搬运。——2020.05.11"
 
 按“通常”配比的混凝土通常渗透系数比较小，因此铺筑的路面在下大雨时就容易积水，甚至出现看海的情况。为了解决这一状况，人们在配制混凝土的时候，刻意减少细骨料的量，大量使用粗骨料，从而增大混凝土的渗透性，其效果如下图所示。
 
-![self-healing-concrete](/assets/self-healing-concrete.png)
+![self-healing-concrete](/assets/img/self-healing-concrete.png)
 
 
 可渗混凝土还有另外一个好处是可以将行车噪声消耗在孔隙里面，实现消声的作用。

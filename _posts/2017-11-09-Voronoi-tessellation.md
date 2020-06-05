@@ -45,7 +45,7 @@ Show[HighlightMesh[
 ```
 
 
-<img src="/assets/voronoimesh.png" width="400px" />
+<img src="/assets/img/voronoimesh.png" width="400px" />
 
 
 值得注意的是，这里 cell 的 index 跟点的顺序并没有对应。对于某个基于网格的区域 `mr`，可通过 `Region``Mesh``MeshMemberCellIndex[mr, pt]` 获取包含点 `pt` 的 cell index。

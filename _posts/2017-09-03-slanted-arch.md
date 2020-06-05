@@ -10,9 +10,9 @@ note: "此文为旧博客搬运。 ——2020.05.17"
 
 在从张家界去往长沙的常张高速（？）上看到了如图所示的倾斜拱桥，其对称轴与常见的拱桥不同，不是竖直的，而是有所倾斜。当时赶路头脑晕乎乎的，没有多想，回来后倒是「定性」地想清楚了为什么是这样的形状。我想这可以作为本学期《结构力学》课程考核的附加题。~~等课程结束后再补充求解过程。~~
 
-![斜拱桥](/assets/inclinedArchBridge1.jpg)
+![斜拱桥](/assets/img/inclinedArchBridge1.jpg)
 
-![斜拱桥](/assets/inclinedArchBridge2.jpg)
+![斜拱桥](/assets/img/inclinedArchBridge2.jpg)
 
 > **求解思路：**
 >

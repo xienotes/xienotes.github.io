@@ -10,7 +10,7 @@ note: "此文档为旧博客搬运。——2020.05.11"
 
 今天在下山去海边途中又看到了如图中所示的波纹痕迹, 那些波纹是船只经过后留下的, 看起来比周边要相对比较平静, 而且保持的时间很久（拍照时已经看不到船只, 而且从拍照到海边兜一圈回来经过时波纹还在, 时间大概有二三十分钟）.
 
-<img src="/assets/boat_trails.jpg" style="width: 80%" />
+<img src="/assets/img/boat_trails.jpg" style="width: 80%" />
 
 因为这很不像船只经过时的Kelvin Wake, 我跟lcq猜测了下可能的原因: 
 

@@ -20,33 +20,33 @@ note: "此文为旧博客搬运。 ——2020.05.17"
 
 天云洞后面的佛岭有座非常简陋的寺庙，主体部分是一块大石头下面的小窟窿，以前只有一老和尚和一小沙弥。寺里香火也不旺，相对来说甚至有点冷清。寺前有一株桃树，春节附近就会开花。不用特意去想，“山寺桃花”的意象就涌入脑中。相比而言，山寺烟雨红梅的意象，就只能通过拍照屏蔽声音缩小视野来想象了。
 
-![放生池](/assets/letgopond-min.jpg)
+![放生池](/assets/img/letgopond-min.jpg)
 *烟雾中的放生池，手机相机可能捕捉了更多的光线，事实上当时站这个位置都看不见牌坊*
 
 
-![梅花](/assets/plum6-min.jpg)
+![梅花](/assets/img/plum6-min.jpg)
 *“墙角数枝梅”*
 
 
-![梅花](/assets/plum1-min.jpg)
+![梅花](/assets/img/plum1-min.jpg)
 *滥用大光圈1*
 
 
-![梅花](/assets/plum3-min.jpg)
+![梅花](/assets/img/plum3-min.jpg)
 *滥用大光圈2*
 
 
-![梅花](/assets/plum5-min.jpg)
+![梅花](/assets/img/plum5-min.jpg)
 *滥用大光圈3*
 
 
-![窗口的梅花](/assets/plum2-min.jpg)
+![窗口的梅花](/assets/img/plum2-min.jpg)
 *窗口的梅花*
 
 
-![落花](/assets/plum4-min.jpg)
+![落花](/assets/img/plum4-min.jpg)
 *水面落花*
 
 
-![菩萨下巴的苍蝇](/assets/fly-min.jpg)
+![菩萨下巴的苍蝇](/assets/img/fly-min.jpg)
 *一只苍蝇粘在菩萨的下巴，我的恶趣味……*
