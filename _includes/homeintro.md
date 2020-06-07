@@ -5,6 +5,7 @@
    4. 督促自己学习。
 
 部分链接：
+*  [留言](/comments.html)
 *  [收藏](/collections.html)
 *  [书签](/bookmarks.html)
 
