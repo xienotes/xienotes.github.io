@@ -256,6 +256,7 @@ li.nav-item {
     margin-bottom: 20px;
     border-top: 1px solid rgb(215, 215, 215);
     font-size: small;
+    text-align: center;
 }
 
 .page-content {
