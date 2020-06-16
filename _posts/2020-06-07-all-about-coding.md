@@ -35,6 +35,15 @@ toc: true
 * [**Julia plot**](http://docs.juliaplots.org/latest/tutorial/#tutorial-1){:target="_blank"}
 * [**Julia by example**](https://juliabyexample.helpmanual.io/){:target="_blank"}
 
+## Maxima
+* [**Documentation sources**](http://maxima.sourceforge.net/documentation.html){:target="_blank"}
+* [**Minimal Maxima**](http://maxima.sourceforge.net/documentation.html){:target="_blank"}, highly recommended
+* [**Learning Maxima**](https://aty.sdsu.edu/bibliog/latex/maxima/intro.html){:target="_blank"}
+* [**The Computer Algebra Program Maxima - a Tutorial**](http://maxima.sourceforge.net/docs/tutorial/en/gaertner-tutorial-revision/Contents.htm){:target="_blank"}
+* [**Micro introduction to Maxima**](http://www.math.harvard.edu/computing/maxima/){:target="_blank"} at Harvard University
+* [**TeXmacs-Maxima interface**](http://www.texmacs.org/tmweb/documents/tutorials/maxima-tutorial/maxima-tutorial.en.html){:target="_blank"} by Andrey Grozin, see more example in the integrated help file in TeXmacs
+* [**wxMaxima**](https://wxmaxima-developers.github.io/wxmaxima/){:target="_blank"} GUI for Maxima
+
 ## Python
 * [**A Byte of Python**](https://python.swaroopch.com/)
 * [**Python Numpy Tutorial**](http://cs231n.github.io/python-numpy-tutorial/)
