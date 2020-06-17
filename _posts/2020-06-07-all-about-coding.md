@@ -9,7 +9,6 @@ lang: en
 toc: true
 ---
 ## Mathematica
-
 * [**An Elementary Introduction to Mathematica**](https://www.wolfram.com/language/elementary-introduction/2nd-ed/){:target="_blank"} by Stephen Wolfram
 * [**Mathematica StackExchange**](https://mathematica.stackexchange.com/){:target="_blank"} particularly
   * [Common Pitfalls](https://mathematica.stackexchange.com/questions/18393/what-are-the-most-common-pitfalls-awaiting-new-users){:target="_blank"}
@@ -27,13 +26,15 @@ toc: true
 
 ## Julia
 * [**Julia Documentation**](https://docs.julialang.org/en/v1/){:target="_blank"}
-* [**Noteworthy differences from other languages**](https://docs.julialang.org/en/v1/manual/noteworthy-differences/index.html){:target="_blank"}
+  * [Noteworthy differences from other languages](https://docs.julialang.org/en/v1/manual/noteworthy-differences/index.html){:target="_blank"}
+  * [Performance tips](https://docs.julialang.org/en/v1/manual/performance-tips/){:target="_blank"}
 * [**Julia discourse**](https://discourse.julialang.org/){:target="_blank"}
 * [**Think Julia**](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html){:target="_blank"}
 * [**The Julia Express**](http://bogumilkaminski.pl/files/julia_express.pdf){:target="_blank"}
 * [**Introducing Julia**](https://en.wikibooks.org/wiki/Introducing_Julia/){:target="_blank"}
 * [**Julia plot**](http://docs.juliaplots.org/latest/tutorial/#tutorial-1){:target="_blank"}
 * [**Julia by example**](https://juliabyexample.helpmanual.io/){:target="_blank"}
+* [**Julia cheatsheet**](https://cheatsheets.quantecon.org/julia-cheatsheet.html){:target="_blank"}
 
 ## Maxima
 * [**Documentation sources**](http://maxima.sourceforge.net/documentation.html){:target="_blank"}
