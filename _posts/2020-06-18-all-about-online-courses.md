@@ -17,6 +17,7 @@ toc: true
 * [**Mathematical Methods for Engineers**](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/){:target="_blank"} @MIT OCW
 * [**Matrix Methods in Data Analysis, Signal Processing, and Machine Learning**](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/){:target="_blank"} @MIT OCW
 * [**Street-Fighting Mathematics**](https://ocw.mit.edu/courses/mathematics/18-098-street-fighting-mathematics-january-iap-2008/index.htm?utm_source=OCWDept&utm_medium=CarouselSm&utm_campaign=FeaturedCourse){:target="_blank"} @MIT OCW
+* [**（北京大学）数学物理方法**](https://www.bilibili.com/video/av6292055/) by 吴崇试
 
 ## Physics
 * [**The Feynman Lectures on Physics**](https://www.feynmanlectures.caltech.edu/){:target="_blank"}
