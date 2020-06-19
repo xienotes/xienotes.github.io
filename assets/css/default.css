@@ -58,7 +58,7 @@ p.post-exerpt {
 .note-container {
     /*margin-left: 40px; */
     margin-right: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 5px 5px 3px 3px;
     display: flex;
 }
@@ -94,6 +94,8 @@ p.post-exerpt {
     box-shadow: 5px 5px 5px #d8d8d8;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     flex: 0 0 70%;
     order: 1;
 }
