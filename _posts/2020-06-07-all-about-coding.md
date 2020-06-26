@@ -35,6 +35,7 @@ toc: true
 * [**Julia plot**](http://docs.juliaplots.org/latest/tutorial/#tutorial-1){:target="_blank"}
 * [**Julia by example**](https://juliabyexample.helpmanual.io/){:target="_blank"}
 * [**Julia cheatsheet**](https://cheatsheets.quantecon.org/julia-cheatsheet.html){:target="_blank"}
+* [**The fast track to Julia 1.0**](https://juliadocs.github.io/Julia-Cheat-Sheet/){:target="_blank"}
 
 ## Maxima
 * [**Documentation sources**](http://maxima.sourceforge.net/documentation.html){:target="_blank"}
@@ -48,6 +49,10 @@ toc: true
 ## Python
 * [**A Byte of Python**](https://python.swaroopch.com/)
 * [**Python Numpy Tutorial**](http://cs231n.github.io/python-numpy-tutorial/)
+
+## Octave/Matlab
+* [**Octave cheatsheet**](https://gist.github.com/obstschale/7320846){:target="_blank"}
+* [**Octave quick reference**](https://www.lehman.edu/academics/cmacs/documents/refcard-a4.pdf){:target="_blank"}
 
 ## Haskell
 * [**Learn You a Haskell for Great Good**](http://learnyouahaskell.com/){:target="_blank"}
