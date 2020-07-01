@@ -9,9 +9,29 @@ title: 碎语
 {% for note in notes %}
 {% capture noteid %}{{ note.date | date: "%Y%m%d" | append: note.slug | strip }}{% endcapture %} 
 
+{% assign weekday = note.date | date:"%A" %}
+{% case weekday %}
+  {% when "Monday" %}
+    {% assign zhweekday = "星期一" %}
+  {% when "Tuesday" %}
+    {% assign zhweekday = "星期二" %} 
+  {% when "Wednesday" %}
+    {% assign zhweekday = "星期三" %}
+  {% when "Thursday" %}
+    {% assign zhweekday = "星期四" %} 
+  {% when "Friday" %}
+    {% assign zhweekday = "星期五" %} 
+  {% when "Saturday" %}
+    {% assign zhweekday = "星期六" %} 
+  {% when "Sunday" %}
+    {% assign zhweekday = "星期日" %}
+  {% else %} 
+    {% assign zhweekday = "Wrong date" %}        
+{% endcase %}
+
 <div class="note-container">
     <div class="note-date" id={{ noteid }}>
-        {{ note.date | date: "%Y-%m-%d %H:%M"}}
+        {{ note.date | date: "%Y-%m-%d %H:%M"}} {{ zhweekday }}
         <a class="note-link" href="#{{ noteid }}" title="note anchor">#</a>
     </div>
     <div class="note-content-container">
