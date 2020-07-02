@@ -58,7 +58,7 @@ p.post-exerpt {
 .note-container {
     /*margin-left: 40px; */
     margin-right: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     border-radius: 5px 5px 3px 3px;
     display: flex;
 }
@@ -73,9 +73,11 @@ p.post-exerpt {
 }
 
 .note-date {
-    color:rgb(121, 121, 121);
+    /* color:rgb(121, 121, 121); */
     font-weight:500;
-    background-color: #e8e8e8;
+    /*background-color: #e8e8e8;*/
+    color: #0366d6;
+    background-color: #d4e6f7;
     padding: 2px 0px 2px 5px; 
     border-radius: 2px 2px 2px 2px;
     /* border-bottom: 0.2px solid #d8d8d8;
