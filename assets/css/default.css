@@ -19,8 +19,19 @@ ul.category-post-list {
 
 h3.post-year,
 h3.post-tag,
-h3.post-category {
+h3.post-category-heading {
     margin-bottom:5px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+.post-category {
+    background-color: #d4e6f7;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    /* line-height: 1.0rem; */
+    /* word-break: keep-all; */
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 .year-count {
     font-size: medium;
@@ -82,7 +93,8 @@ p.post-exerpt {
     border-radius: 2px 2px 2px 2px;
     /* border-bottom: 0.2px solid #d8d8d8;
     border-top: 0.2px solid #d8d8d8; */
-    border: 0.1px solid #c1c1c1;
+    /* border: 0.1px solid #c1c1c1; */
+    border: 0.1px solid #d4e6f7;
     box-shadow: 3px 3px 3px #d8d8d8;
     margin-left: 15px;
     flex: 1;
@@ -158,7 +170,7 @@ p.more {
         order: 1;
         margin-left: 0px;
         box-shadow: 0px 0px 0px #d8d8d8;
-        border: 0.2px solid #c1c1c1;
+        border: 0.2px solid #d4e6f7;
         border-bottom: 0px solid #d8d8d8;
         border-radius: 2px 2px 0px 0px;
     }

@@ -12,10 +12,6 @@ title: 收藏
 
 The following *money and jewelry* are collected out of sheer curiosity. I am fully aware that I might just as well read through all the related textbooks, so maybe I am not that curious after all. 
 
-<a target="_blank" href="http://www.gocomics.com/calvinandhobbes/1995/06/03">
-<img src="/assets/treasure.gif" style="width: 100%;"/>
-</a>
-
 ## Chemistry
 
 * Videos of all kinds of [**chemistry experiments**](https://practicum.melscience.com/experiments/)

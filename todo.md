@@ -3,15 +3,7 @@ layout: default
 ---
 ## 待办事项
 
-#### 数学
-* 整理 PDE 笔记
-
-#### 物理
-* Feynman lectures
-
-#### 力学
-* Soil Dynamics
-
-#### IT相关
-* Constitutive modeling with Mathematica
-* 本网站搭建及设置相关说明
+### 阅读
+* **未央歌** by 鹿桥
+*  ***How to Walk on Water and Climb up Walls*** by David Hu
+*  ***Classical Mechanics: The Theoretical Minimum*** by George Hrabovsky and Leonard Susskind
