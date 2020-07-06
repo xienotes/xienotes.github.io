@@ -37,6 +37,17 @@ title: 碎语
     <div class="note-content-container">
         {{ note.content }}
         
+        {% if note.mf-photo %}
+           {% for img in note.mf-photo%}
+            {% if site.jsdelivr.enabled %}
+                <img class="note-image" src={{img | replace: "https://xienotes.net", site.jsdelivr.url }} alt="">
+            {% else %}
+               <img class="note-image" src={{img}} alt="">
+            {% endif %}
+           {% endfor %}
+        {% endif %}
+
+        {% comment %}
         {% capture imgfile %}{{ note.date | date: "%Y%m%d" | append: note.slug}}{% endcapture %}
         {% for img in site.static_files %}
           {% if img.path contains "/assets/notes/" and img.name contains imgfile %}
@@ -47,6 +58,7 @@ title: 碎语
             {% endif %}
           {% endif %}
         {% endfor %}
+        {% endcomment %}
     </div>
 </div>
 {% endfor %}
