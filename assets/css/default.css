@@ -162,9 +162,9 @@ p.more {
 
 @media screen and (max-width: 768px) {
     .note-date {
-        font-weight:lighter;
+        font-weight: 100;
         font-size: smaller;
-        color: rgb(199, 199, 199);
+        color: rgb(180, 180, 180);
         padding: 2px 10px 2px 10px;
         order: 1;
         margin-left: 0px;
