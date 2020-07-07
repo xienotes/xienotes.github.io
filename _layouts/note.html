@@ -24,6 +24,7 @@ layout: default
 <h2>{{ page.date | date: "%Y-%m-%d %H:%M" }} {{ zhweekday }}</h2>
 {{ content }}
 
+{% comment %}
 {% capture imgfile %}{{ page.date | date: "%Y%m%d" | append: page.slug}}{% endcapture %}
         {% for img in site.static_files %}
           {% if img.path contains "/assets/notes/" and img.name contains imgfile %}
@@ -34,6 +35,16 @@ layout: default
             {% endif %}
           {% endif %}
         {% endfor %}
+{% endcomment %}
+        {% if page.mf-photo %}
+           {% for img in page.mf-photo%}
+            {% if site.jsdelivr.enabled %}
+                <img class="note-image" src={{img | replace: "https://xienotes.net", site.jsdelivr.url }} alt="">
+            {% else %}
+               <img class="note-image" src={{img}} alt="">
+            {% endif %}
+           {% endfor %}
+        {% endif %}
 
 {% include mathjax.html %}
 {% include modalImage.html %}

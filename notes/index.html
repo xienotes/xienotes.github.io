@@ -31,7 +31,7 @@ title: 碎语
 
 <div class="note-container">
     <div class="note-date" id={{ noteid }}>
-      <a class="note-link" href="#{{ noteid }}" title="note anchor">{{ note.date | date: "%Y-%m-%d %H:%M"}} {{ zhweekday }}</a>
+      <a class="note-link" href="{{ note.url }}" title="note anchor">{{ note.date | date: "%Y-%m-%d %H:%M"}} {{ zhweekday }}</a>
     </div>
     <div class="note-content-container">
         {{ note.content }}
