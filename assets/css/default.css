@@ -181,7 +181,7 @@ p.more {
     }
     .note-container {
         margin-left: 0px;
-        margin-right: 2px;
+        margin-right: 0px;
         flex-direction: column;
     }
     .note-content-container {
