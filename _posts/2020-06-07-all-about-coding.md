@@ -23,6 +23,7 @@ toc: true
 * [***The* book**](https://doc.rust-lang.org/book/){:target="_blank"}
 * [**Rust by example**](https://doc.rust-lang.org/stable/rust-by-example/){:target="_blank"}
 * [**Rust algorithm club**](https://rust-algo.club/index.html){:target="_blank"}
+* [**Tour of Rust**](https://tourofrust.com/){:target="_blank"}
 
 ## Julia
 * [**Julia Documentation**](https://docs.julialang.org/en/v1/){:target="_blank"}
