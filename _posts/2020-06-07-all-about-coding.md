@@ -50,6 +50,7 @@ toc: true
 ## Python
 * [**A Byte of Python**](https://python.swaroopch.com/)
 * [**Python Numpy Tutorial**](http://cs231n.github.io/python-numpy-tutorial/)
+* [**Official Matplotlib cheatsheet**](https://github.com/matplotlib/cheatsheets){:target="_blank"}
 
 ## Octave/Matlab
 * [**Octave cheatsheet**](https://gist.github.com/obstschale/7320846){:target="_blank"}
