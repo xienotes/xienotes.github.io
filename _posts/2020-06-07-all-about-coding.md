@@ -61,7 +61,16 @@ toc: true
 * <https://www.tutorialspoint.com/haskell/index.htm>{:target="_blank"}
 
 ## Bash
-* [**Shell 教程**](https://www.runoob.com/linux/linux-shell.html) from **菜鸟教程**
+* [**Shell 教程**](https://www.runoob.com/linux/linux-shell.html){:target="_blank"} from **菜鸟教程**
   
 ## HTML/CSS/Javascript
-* [**W3Schools**](https://www.w3schools.com/)
+* [**W3Schools**](https://www.w3schools.com/){:target="_blank"}
+
+## VBA
+* [**Excel VBA for Beginners**](http://www.homeandlearn.org/index.html){:target="_blank"}
+
+## Misc
+* [**Structure and Interpretation of Computer Programs**](https://mitpress.mit.edu/sicp/
+full-text/book/book.html){:target="_blank"} THE SICP!
+* [**Test regular expression**](https://regexr.com/){:target="_blank"}
+* [**Bayesian Optimization**](http://krasserm.github.io/2018/03/21/bayesian-optimization/){:target="_blank"}

@@ -17,6 +17,7 @@ The following *money and jewelry* are collected out of sheer curiosity. I am ful
 * Videos of all kinds of [**chemistry experiments**](https://practicum.melscience.com/experiments/)
 * [**Chemical compound**](http://www.compoundchem.com/) of, I suppose, everything
 * [**Chemistry World**](https://www.chemistryworld.com/)
+* [**生活中的分子**](https://cn.chem-station.com/category/molecule){:target="_blank"}
 
 
 ## Biology & Meds
@@ -27,48 +28,6 @@ The following *money and jewelry* are collected out of sheer curiosity. I am ful
 
 * [**Geology**](http://geology.com/)
 * [**USGS**](https://www.usgs.gov/)
-
-## Coding
-
-### Mathematica
-
-- [**An Elementary Introduction to Mathematica**](https://www.wolfram.com/language/elementary-introduction/2nd-ed/) by Stephen Wolfram
-- [**Mathematica StackExchange**](https://mathematica.stackexchange.com/) particularly
-  - [Common Pitfalls](https://mathematica.stackexchange.com/questions/18393/what-are-the-most-common-pitfalls-awaiting-new-users)
-  - [Good Programming Practice](https://mathematica.stackexchange.com/questions/18/where-can-i-find-examples-of-good-mathematica-programming-practice)
-- [**Mathematica Programming®: An Advanced Introduction**](http://www.mathprogramming-intro.org/)
-- [**Wolfram Language Fundamentals**](http://library.wolfram.com/infocenter/MathSource/5216/)
-- [**Mathestate**](http://www.mathestate.com/) Mathematica for financial engineering
-- [**Wolfram U**](http://www.wolfram.com/wolfram-u/)  Open courses for Wolfram Language
-- [**Wolfram Language Code Repository**](http://www.wolfram.com/language/gallery/)
-
-### Julia
-
-see https://ehippocampus.xyz/all-about-julia
-
-### Python
-
-* [**A Byte of Python**](https://python.swaroopch.com/)
-* [**Python Numpy Tutorial**](http://cs231n.github.io/python-numpy-tutorial/)
-
-### Haskell
-
-* [**Learn You a Haskell for Great Good**](http://learnyouahaskell.com/)
-* https://www.tutorialspoint.com/haskell/index.htm
-
-### Matlab
-
-### Fortran
-
-### VBA
-
-* [**Excel VBA for Beginners**](http://www.homeandlearn.org/index.html)
-
-### Misc
-
-* [**Structure and Interpretation of Computer Programs**](https://mitpress.mit.edu/sicp/full-text/book/book.html) THE SICP!
-* [**Test regular expression**](https://regexr.com/)
-* [**Bayesian Optimization**](http://krasserm.github.io/2018/03/21/bayesian-optimization/)
 
 ## Editing & Related
 

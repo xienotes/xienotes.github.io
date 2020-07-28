@@ -17,3 +17,4 @@ date: 2020-05-11 16:43
 - [**诸子百家**](http://www.ziyexing.com/files-5/zzbj_index.htm)
 - [**国学春秋网**](http://guoxue.lishichunqiu.com/) from [**历史春秋**](http://www.lishichunqiu.com/)
 - [**典故故事览评**](http://www.dongliw.com/Class.asp?ID=34)
+- [**全历史**](https://www.allhistory.com/){:target="_blank"}
