@@ -4,19 +4,17 @@
    3. 督促自己整理学过的内容，将其“内化”；
    4. 督促自己学习。
 
-部分链接：
-*  [收藏](/collections.html)
-*  [书签](/bookmarks.html)
-*  [标签](/tags.html)
-*  [待办](/todo.html)
+网站托管于 [Github Pages][github]{:target="_blank"}，采用默认的 [Jekyll][jekyll]{:target="_blank"} 引擎，主题基于 [true minimal][trueminimal]{:target="_blank"} 改动，大概可称作 [pseudo-minimal]({% link _posts/2020-04-25-github-pages-and-jekyll.md %})。
 
-网站托管于 [Github Pages][github]{:target="_blank"}，采用默认的 [Jekyll][jekyll]{:target="_blank"} 引擎，主题基于 [true minimal][trueminimal]{:target="_blank"} 改动，大概可称作 ~~quasi-minimal~~ [pseudo-minimal]({% link _posts/2020-04-25-github-pages-and-jekyll.md %})。
+如欲联系博主，可[于此留言](/comments.html)。
 
+{% comment %}
 {% if site.jsdelivr.enabled %}
    ![ch]({{site.jsdelivr.url}}/assets/img/calvinandhobbes_treasure.gif)
 {% else %}
    ![ch](/assets/img/calvinandhobbes_treasure.gif)
 {% endif %}
+{% endcomment %}
 
 [github]: https://pages.github.com/
 [jekyll]: https://jekyllrb.com/

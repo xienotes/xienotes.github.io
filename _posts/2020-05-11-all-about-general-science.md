@@ -34,3 +34,4 @@ date: 2020-05-11 16:42
 * [**On Growth and Form**](https://www.ongrowthandform.org/){:target="_blank"}
 * [**三思科学**](http://www.oursci.8gov.com/mag.htm){:target="_blank"}
 * [**科学画报**](http://www.kxhb.com/){:target="_blank"}
+* [**Richard Feynman**](http://www.feynman.com/){:target="_blank"}

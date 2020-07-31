@@ -54,9 +54,7 @@ navigation:
   - name: 碎语
     url: /notes/index.html
   - name: 搜索
-    url: /search.html    
-  - name: 留言
-    url: /comments.html  
+    url: /search.html 
 
 # table of contents set up
 toc_max: 3
