@@ -342,10 +342,10 @@ a.post-tag {
 @media screen and (max-width: 768px) {
     ol {
         padding-left: 20px;
-        margin-left:20px;
+        margin-left: 20px;
     }
     ul {
-        padding-left:20px;
+        padding-left: 20px;
     }
     .header-navigation {
         margin-left: 0px;
@@ -358,11 +358,11 @@ a.post-tag {
     .site-name-text {
         font-size: x-large;
     }
-    ul.nav-list {
+    /* ul.nav-list { */
         /* width: 100%; */
         /* margin: auto; */
         /* text-align: center; */
-    }
+    /* } */
     .nav-item a {
         color: whitesmoke;
         padding: 5px;
