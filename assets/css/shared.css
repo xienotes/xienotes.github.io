@@ -340,23 +340,28 @@ a.post-tag {
  }
  
 @media screen and (max-width: 768px) {
-    ul,ol {
+    ol {
         padding-left: 20px;
+        margin-left:20px;
+    }
+    ul {
+        padding-left:20px;
     }
     .header-navigation {
         margin-left: 0px;
     }
     .site-name {
-        text-align: center;
-        margin: 0 0px 10px 0px;
+        /* text-align: center; */
+        /* margin: 0 0px 10px 0px; */
+        margin-left: 10px;
     }
     .site-name-text {
         font-size: x-large;
     }
     ul.nav-list {
-        width: 100%;
-        margin: auto;
-        text-align: center;
+        /* width: 100%; */
+        /* margin: auto; */
+        /* text-align: center; */
     }
     .nav-item a {
         color: whitesmoke;

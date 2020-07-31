@@ -41,7 +41,7 @@ title: 碎语
             {% if site.jsdelivr.enabled %}
                 <img class="note-image" src={{img | replace: "https://xienotes.net", site.jsdelivr.url }} alt="">
             {% else %}
-               <img class="note-image" src={{img}} alt="">
+               <img class="note-image" src={{img | replace: "https://xienotes.net",""}} alt="">
             {% endif %}
            {% endfor %}
         {% endif %}
