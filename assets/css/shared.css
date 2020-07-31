@@ -351,18 +351,17 @@ a.post-tag {
         margin-left: 0px;
     }
     .site-name {
-        /* text-align: center; */
-        /* margin: 0 0px 10px 0px; */
-        margin-left: 10px;
+        text-align: center;
+        margin: 0 0px 10px 0px;
     }
     .site-name-text {
         font-size: x-large;
     }
-    /* ul.nav-list { */
-        /* width: 100%; */
-        /* margin: auto; */
-        /* text-align: center; */
-    /* } */
+    ul.nav-list {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
     .nav-item a {
         color: whitesmoke;
         padding: 5px;
