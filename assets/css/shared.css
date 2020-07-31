@@ -94,10 +94,10 @@ hr {
 li p.first {
     display: inline-block;
 }
-ul,
+/* ul,
 ol {
     padding-left: 30px;
-}
+} */
 ul:first-child,
 ol:first-child {
     margin-top: 0;
@@ -341,11 +341,12 @@ a.post-tag {
  
 @media screen and (max-width: 768px) {
     ol {
-        padding-left: 20px;
-        margin-left: 20px;
+        padding-left: 30px;
+        margin-left: 0px;
     }
     ul {
         padding-left: 20px;
+        margin-left: 0px;
     }
     .header-navigation {
         margin-left: 0px;
