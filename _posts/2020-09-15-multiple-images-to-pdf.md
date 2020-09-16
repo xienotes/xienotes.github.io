@@ -1,7 +1,7 @@
 ---
 layout: post
 hidden: true
-title: 将多张图片聚合到一个 PDf 文件
+title: 将多张图片聚合到一个 PDF 文件
 category: HandyTools
 date: 2020-09-15 16:08
 ---
