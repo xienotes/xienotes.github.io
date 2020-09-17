@@ -24,7 +24,7 @@ toc: true
 1. 在repository 页面，选择 `Settings`。
 2. 在 `GitHub Pages` 区域选择模板: 
 
-    <img src="/assets/img/github-pages-theme-chooser.JPG" alt="theme-chooser" />
+    <img src="{{site.jsdelivr.url}}/assets/img/github-pages-theme-chooser.JPG" alt="theme-chooser" />
 
     不过这里想用指定的模板 `true minimal`，即 [https://github.com/cyevgeniy/jekyll-true-minimal/](https://github.com/cyevgeniy/jekyll-true-minimal/){:target="_blank"} 。
 
@@ -84,17 +84,17 @@ category: blog
 
    * 点击相应域名后面的蓝色小球 `Manage DNS for this domain`：
 
-     <img src="/assets/img/namesilo-manage-domain.png" alt="manage domain in namesilo" style="zoom:50%;" />
+     <img src="{{site.jsdelivr.url}}/assets/img/namesilo-manage-domain.png" alt="manage domain in namesilo" style="zoom:50%;" />
 
    * 然后进入 DNS 管理页，默认已有一系列记录，可以删掉，然后选择下面 Github 的模板，应用：
 
-     <img src="/assets/img/github-dns-template.png"  />
+     <img src="{{site.jsdelivr.url}}/assets/img/github-dns-template.png"  />
 
    * 添加一条 `CNAME` 记录，指向我们的域名。
 
    * 所以，总的可能是这样：
 
-     <img src="/assets/img/namesilo-github-dns.JPG" />
+     <img src="{{site.jsdelivr.url}}/assets/img/namesilo-github-dns.JPG" />
 
 3. 回到 Github Repository `Settings`页面，在 GitHub Pages `Custom domain` 处填入刚购买的域名，同时把下面 `Enforce HTTPS`打勾。
 

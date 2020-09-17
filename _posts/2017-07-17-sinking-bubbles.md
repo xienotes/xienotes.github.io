@@ -19,7 +19,7 @@ note: "此文档为旧博客搬运。——2020.05.11"
 
 这个传说中的世纪难题好像一直没人认真去解决，直到1999年澳大利亚新南威尔士大学（University of New South Wales）的 Clive Fletcher 教授通过计算流体动力学软件FLUENT 模拟了啤酒中气泡的运动情况。这一数值模拟并没有那么简单，需要考虑各种影响因素，如粘滞系数、密度、温度、几何形状等，“相较而言，模拟空调的气流或者供暖系统有毒气体的排放都变得极为简单”[^easy]。不管怎样，Fletcher教授的研究小组成功进行了啤酒中气泡的模拟，并研究了气泡尺寸对气泡运动模式的影响[^shape] ，结果发现其原理出奇地“简单”。
 
-<img src="/assets/img/guiness_flow_line_fletcher.gif" width="150px"/>
+<img src="{{site.jsdelivr.url}}/assets/img/guiness_flow_line_fletcher.gif" width="150px"/>
 *图1. 气泡路径图显示大气泡（直径 $1\ \mathrm{mm}$）都往上升（黄色路线），而小气泡（直径 $60 \ \mu \mathrm{m}$）在杯子的边缘向下运动*
 
 
@@ -47,10 +47,10 @@ Dick Zare 教授的小组在1998年[^research]之后曾在酒吧做过一些初�
 {:center: style="text-align: center"}
 {:centertb: style="margin-left: auto; margin-right: auto"}
 
-| <img src="/assets/img/g1.gif" width="50px"/> | <img src="/assets/img/g2.gif" width="50px"/> | <img src="/assets/img/g3.gif" width="50px"/> |
+| <img src="{{site.jsdelivr.url}}/assets/img/g1.gif" width="50px"/> | <img src="{{site.jsdelivr.url}}/assets/img/g2.gif" width="50px"/> | <img src="{{site.jsdelivr.url}}/assets/img/g3.gif" width="50px"/> |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
 |                   第1步                    |                   第2步                    |                   第3步                    |
-| <img src="/assets/img/g4.gif" width="50px"/> | <img src="/assets/img/g5.gif" width="50px"/> | <img src="/assets/img/glassgif.gif" width="50px"/> |
+| <img src="{{site.jsdelivr.url}}/assets/img/g4.gif" width="50px"/> | <img src="{{site.jsdelivr.url}}/assets/img/g5.gif" width="50px"/> | <img src="{{site.jsdelivr.url}}/assets/img/glassgif.gif" width="50px"/> |
 |                   第4步                    |                   第5步                    |                   循环图                    |
 {:centertb}
 
@@ -69,12 +69,12 @@ Zare 教授的项目页面上有关于[杯子形状](https://web.stanford.edu/gr
 不知这里所说的杯子的形状“会改变运动模式但不改变效应”具体是什么意思，因为形状不同气泡可能向上或向下，但是杯子、液体以及气泡之间的相互作用的模式是不变的？不管怎样，也确实有人继续研究了杯子形状对气泡运动的影响。2012年来自爱尔兰 Limerick 大学的 Benilov 教授采用了强大的多物理场耦合软件 COMSOL Multiphysics 进行了模拟，将健力士啤酒看成两相物质（气体和液体），并考虑气体—液体—固体之间的相互作用，研究了不同杯子形状时气泡的运动情况，模拟结果如图3所示（根据轴对称，只模拟了一个径向剖面）。
 
 
-<img src="/assets/img/g-shape.PNG" width="350px"/>
+<img src="{{site.jsdelivr.url}}/assets/img/g-shape.PNG" width="350px"/>
 *图3 “上宽下窄”（左图）和“上窄下宽”玻璃杯中气泡流动图*
 
 从图中可以看出，当杯子（爱尔兰常用的pint）为普通的上宽下窄时，杯边缘的液体会往下运动；而当杯子为上窄下宽时（anti-pint），杯边缘的液体反而向上运动。其解释也依赖于流体在杯子内部形成“环流”（circulation），不同的是对上升过程中气泡的不均匀现象给了另一种解释。
 
-<img src="/assets/img/bubble-evolution.PNG" width="300px"/>
+<img src="{{site.jsdelivr.url}}/assets/img/bubble-evolution.PNG" width="300px"/>
 *图4 “上宽下窄” （a） 和“上窄下宽”（b）玻璃杯中气泡的演化情况*
 
 

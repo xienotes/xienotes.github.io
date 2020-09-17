@@ -29,7 +29,7 @@ url["fujianfuzhou",201811]
 
 打开这个页面，我们发现我们关注的数据以表格的形式给出：
 
-![fuzhouweatherhistory](/assets/img/fuzhouweatherhistory.JPG)
+![fuzhouweatherhistory]({{site.jsdelivr.url}}/assets/img/fuzhouweatherhistory.JPG)
 
 html 页面中的数据一般存储在列表 `<li>..</li>` 或者表格 `<table>..</table>` 里面，利用Mathematica `Import` 函数并指定 `"Data"`元素即可将其提取出来：
 
@@ -50,7 +50,7 @@ Short[data,5]
 
 可得到如下结果
 
-![shortdata](/assets/img/shortdata.JPG)
+![shortdata]({{site.jsdelivr.url}}/assets/img/shortdata.JPG)
 
 可以看出，除了表格里的内容，还有很多不需要的数据。我们先查看下所需数据所在的层次：
 
@@ -66,7 +66,7 @@ table = data[[2, 1, 1]];
 Short[table, 5]
 ```
 
-![shortdata2](/assets/img/shortdata2.JPG)
+![shortdata2]({{site.jsdelivr.url}}/assets/img/shortdata2.JPG)
 
 正好就是我们所需的数据表格了。
 
@@ -154,7 +154,7 @@ BarChart[#, LabelingFunction -> (Placed[#, Above] &),
   "night"]
 ```
 
-![fznightweather](/assets/img/fznightweather.jpg)
+![fznightweather]({{site.jsdelivr.url}}/assets/img/fznightweather.jpg)
 
 作为对比，简单查看下待过的北京和香港的天气情况：
 

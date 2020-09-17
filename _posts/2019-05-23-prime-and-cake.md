@@ -99,7 +99,7 @@ Block[{f, a},
  (*{245373636545037/3906250000000000,0.0628157}*)
 ```
 
-![cakes](/assets/img/cakes.JPG)
+![cakes]({{site.jsdelivr.url}}/assets/img/cakes.JPG)
 
 Julia 代码:
 
@@ -119,6 +119,6 @@ plot(1:20, [leftover(n) for n in 1:20], label="leftover", seriestype=:scatter)
 plot!(1:20, [share(n) for n in 1:20], label="share", seriestype=:scatter)
 ```
 
-![cakes2](/assets/img/cakes2.JPG)
+![cakes2]({{site.jsdelivr.url}}/assets/img/cakes2.JPG)
 
 [^truncatableprime]: 事实上这些可称为可切素数(truncatable prime), <http://mathworld.wolfram.com/TruncatablePrime.html>

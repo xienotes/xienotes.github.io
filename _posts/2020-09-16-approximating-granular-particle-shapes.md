@@ -9,9 +9,9 @@ mathjax: true
 ---
 昨天听 Jun Yang 的讲座，看到如下图所示的用于生成不同土颗粒形状的公式，看起来还挺有意思。
 
-![yang-formula](/assets/img/yang-formula.png){:style="width:50%"}
+![yang-formula]({{site.jsdelivr.url}}/assets/img/yang-formula.png){:style="width:50%"}
 
-![yang-particles](/assets/img/yang-particles.png){:style="width:50%"}
+![yang-particles]({{site.jsdelivr.url}}/assets/img/yang-particles.png){:style="width:50%"}
 
 用于生成颗粒形状的公式为：
 
@@ -38,7 +38,7 @@ Block[
   ]
  ]
 ```
-![example](/assets/img/example.PNG){:style="width:50%"}
+![example]({{site.jsdelivr.url}}/assets/img/example.PNG){:style="width:50%"}
 
 同样将其在 $x-y$，$x-z$，$y-z$ 平面的投影画出来：
 
@@ -64,7 +64,7 @@ Block[
  {xy, xz, yz}
  ]
 ```
-![projection](/assets/img/projection.PNG)
+![projection]({{site.jsdelivr.url}}/assets/img/projection.PNG)
 
 可以清楚看出 $a$，$b$，$c$ 所对应的几何意义。另外，因为 $n_2=1$，所以 在固定 $z$ 的情况下，$x$ 和 $y$ 为线性关系，即 $n_2$ 控制了在固定 $z$ 下 $x$ 和 $y$ 之间的关系。$n_1$ 则控制了 $x$ 和 $y$ 整体与 $z$ 之间的关系。当然，为了更清楚看其几何意义，可以将 $x$ 或 $y$ 固定，$n_1$ 控制了上图中 $x-z$ 平面和 $y-z$ 平面投影的曲线的弯曲情况。
 
@@ -94,7 +94,7 @@ Block[
   ]
  ]
 ```
-![bothsmall](/assets/img/bothsmall.PNG){:style="width:50%"}
+![bothsmall]({{site.jsdelivr.url}}/assets/img/bothsmall.PNG){:style="width:50%"}
 
 ### $n_1$ 和 $n_2$ 都比较大
 如果 $n_1$ 和 $n_2$ 都比较大，比如 $n_1=n_2=10$，则如果 $x <a$ （或者 $y<b$，$z<c$），则该项就会非常小，其他坐标就会趋于一个常数，因此整体就会趋于一个六面体。
@@ -113,7 +113,7 @@ Block[
   ]
  ]
 ```
-![bothlarge](/assets/img/bothlarge.PNG){:style="width:50%"}
+![bothlarge]({{site.jsdelivr.url}}/assets/img/bothlarge.PNG){:style="width:50%"}
 
 ### $n_1$ 比较小，$n_2$ 比较大
 如果 $n_1$ 比较小，$n_2$ 比较大，比如 $n_1=1$，$n_2=10$，则如果固定 $z$，在 $x-y$ 平面的投影将是个矩形，而固定 $x$ (或 $y$)，$y-z$ （或 $x-z$ ）将趋于线性。
@@ -132,7 +132,7 @@ Block[
   ]
  ]
 ```
-![n1smalln2large](/assets/img/n1smalln2large.PNG){:style="width:50%"}
+![n1smalln2large]({{site.jsdelivr.url}}/assets/img/n1smalln2large.PNG){:style="width:50%"}
 
 ### $n_1$ 比较大，$n_2$ 比较小
 如果 $n_1$ 比较大，$n_2$ 比较小，比如 $n_1=10$，$n_2=1$，则如果固定 $z$， $x-y$ 曲线趋于线性，而固定 $x$ (或 $y$)，$y-z$ （或 $x-z$ ）将趋于矩形。
@@ -151,7 +151,7 @@ Block[
   ]
  ]
 ```
-![n1largen2small](/assets/img/n1largen2small.PNG){:style="width:50%"}
+![n1largen2small]({{site.jsdelivr.url}}/assets/img/n1largen2small.PNG){:style="width:50%"}
 
 
 ### 适中的 $n_1$ 和 $n_2$
@@ -171,7 +171,7 @@ Block[
   ]
  ]
 ```
-![medium](/assets/img/mediumn1n2.PNG){:style="width:50%"}
+![medium]({{site.jsdelivr.url}}/assets/img/mediumn1n2.PNG){:style="width:50%"}
 
 上面的代码画图的部分可以整到一个函数里面，我这里偷懒了。
 
@@ -207,6 +207,6 @@ Block[
   ]
  ]
 ```
-![tabulate-shapes](/assets/img/tabulateshapes.PNG)
+![tabulate-shapes]({{site.jsdelivr.url}}/assets/img/tabulateshapes.PNG)
 
 生成不同形状的颗粒还只是第一步，生成互相不重叠的具有一定孔隙比的颗粒堆才是麻烦的开始。

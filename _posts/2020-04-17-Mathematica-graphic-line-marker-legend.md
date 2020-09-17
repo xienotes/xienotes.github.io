@@ -9,7 +9,7 @@ note: "此文档为旧博客搬运。——2020.05.10"
 ---
 例如我们有很多条曲线（用实线画），相应有多组可对比的数据（用不同的符号Marker），这时候希望能够把图例 （legend）里面线和相应的符号放一起， 比如
 
-![line-marker-demo](/assets/img/line-marker-demo.JPG)
+![line-marker-demo]({{site.jsdelivr.url}}/assets/img/line-marker-demo.JPG)
 
 要在 Mathematica 里面实现，我能想到的分别把线和符号画出来，然后放一起插入作为图例即可。要确定如下两点：
 
@@ -37,6 +37,6 @@ lgd =
 ```
 {% endraw %}
 
-![line-marker-legend](/assets/img/line-marker-legend.JPG)
+![line-marker-legend]({{site.jsdelivr.url}}/assets/img/line-marker-legend.JPG)
 
 注意，这里用简单 `Graphics[{Line[...]}]` 画出来的线上下有很大的空白，这里采用了 `AspectRatio->1/50, ImageSize -> {20, 10}` 来控制其大小，见 <https://mathematica.stackexchange.com/questions/127272/why-is-graphics-adding-all-this-whitespace-above-and-below-a-simple-line?rq=1>{:target="_blank"}
