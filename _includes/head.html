@@ -7,7 +7,11 @@
 <head>
     <title>
         {% if page.title %}
-            {{ page.title }}-{{ site.name }}
+            {% if page.title.size > 0 %%}
+                {{ page.title }}-{{ site.name }}
+            {% else %}
+                {{ site.name }}
+            {% endif %}
         {% else %}
             {{ site.name }}
         {% endif %}
