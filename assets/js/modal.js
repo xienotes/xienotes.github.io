@@ -10,7 +10,7 @@ for (i=0;i<imgs.length-1;i++) {
     var img = imgs[i];
     img.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = this.src;        
+        modalImg.src = this.src;
     }
 }
 // Get the <span> element that closes the modal
@@ -20,3 +20,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 } 
+
+modalImg.onclick = function() {
+  modal.style.display = "none";
+}
