@@ -10,11 +10,18 @@ date: 2020-09-15 16:08
 现在有了一堆按顺序命名的图片，需要将其整合到同一个文件里面，如同一个 PDF 文档。简单搜索了一下，发现神器 ImageMagick 的 `convert` 命令可以非常方便地完成这项功能，就一行命令：
 
 ```bash
-convert *.png out.pdf
+magick convert *.png out.pdf
 ```
 
 不过要注意 Windows 也有自带的 `convert` 命令，其功能是将 FAT 转到 NTFS 格式。上述 ImageMagick 的 `convert` 功能是在 Linux （如 Windows 的 WSL）系统里面完成。
 
+另外可用 [`img2pdf`](https://github.com/josch/img2pdf){:target="_blank"} 工具，命令为：
+
+```bash
+sudo apt-get install img2pdf
+img2pdf *.jpg -o out.pdf
+```
+如需将多个 PDF 文档合并成一个 PDF 文档，则可以使用 [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/){:target="_blank"}。
 
 **参考**
 
