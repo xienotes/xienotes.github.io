@@ -4,6 +4,14 @@ title: 碎语
 ---
 <h2>碎语 <span class="note-count">共 {{ site.posts | where:"layout","note" | size }} 条</span></h2>
 
+<div class="note-container">
+  <div class="note-date">
+    <a class="note-link" id="currentdate"></a>
+  </div>
+  <div class="note-content-container" id="xiaopu">
+  </div>
+</div>
+
 <!-- This loops through the paginated posts -->
 {% assign notes = paginator.posts | where_exp: "page","page.layout=='note' "%}
 {% for note in notes %}
@@ -95,3 +103,18 @@ title: 碎语
 {% else %}
     <script src="/assets/js/notePageRedirect.js"></script>
 {% endif %}
+
+<script>
+  const date1 = new Date('2/2/2021');
+  const date2 = new Date();
+  const diffTime = date2 - date1;
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  var today  = new Date();
+  date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'});
+  var currenttime = document.getElementById("currentdate");
+  currenttime.innerHTML = date3;
+
+  var daycount = document.getElementById("xiaopu");
+  daycount.innerHTML= "小朴今天 "+ diffDays + " 天啦~";
+</script>
