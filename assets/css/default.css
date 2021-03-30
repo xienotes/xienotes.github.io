@@ -92,7 +92,7 @@ p.post-exerpt {
     /* border-radius: 2px 2px 2px 2px; */
     /* border: 0.0px solid #c1c1c1; */
     /* box-shadow: 5px 5px 3px #a8a8a8; */
-    text-decoration: underline dotted;
+    /* text-decoration: underline dotted; */
     margin-left: 15px;
     flex: 1;
     order: 2;
@@ -114,7 +114,8 @@ p.post-exerpt {
 a.note-link {
     opacity: 1;
     color:rgb(121, 121, 121);
-    text-decoration: none;
+    /* text-decoration: none; */
+    text-decoration: underline dotted;
 }
 
 a.note-link:hover {
@@ -174,7 +175,7 @@ p.more {
         border-bottom: 0.0px solid #d8d8d8;
         border-radius: 5px 5px 0px 0px;
         text-align: left;
-        text-decoration: underline dotted;
+        /* text-decoration: underline dotted; */
         align-self: stretch;
         background-color: #d4e6f7;
     }
