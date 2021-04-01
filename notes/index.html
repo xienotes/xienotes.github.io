@@ -109,6 +109,9 @@ title: 碎语
   const date2 = new Date();
   const diffTime = date2 - date1;
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  const weekCount = Math.floor(diffDays/7);
+  const weekDays = diffDays%7;
+  const week = "（" + weekCount + "周+" + weekDays + "天）";
 
   var today  = new Date();
   date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'});
@@ -116,5 +119,5 @@ title: 碎语
   currenttime.innerHTML = date3;
 
   var daycount = document.getElementById("xiaopu");
-  daycount.innerHTML= "小朴今天 "+ diffDays + " 天啦~";
+  daycount.innerHTML= "小朴今天 "+ diffDays + " 天" + week + "啦~";
 </script>
