@@ -110,8 +110,17 @@ title: 碎语
 <script src="/assets/js/moment-timezone-with-data-1970-2030.min.js"></script>
 
 <script>
+  var weekday = new Array(7);
+  weekday[0] = "星期日";
+  weekday[1] = "星期一";
+  weekday[2] = "星期二";
+  weekday[3] = "星期三";
+  weekday[4] = "星期四";
+  weekday[5] = "星期五";
+  weekday[6] = "星期六";
+
   var today  = new Date();
-  date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'});
+  date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'}) + ' ' + weekday[today.getDay()];
   var currenttime = document.getElementById("currentdate");
   currenttime.innerHTML = date3;
 
@@ -120,7 +129,7 @@ title: 碎语
   var diff = moment.preciseDiff(starts, ends);
   var daydiff = ends.diff(starts,'days');
   var daycount = document.getElementById("xiaopu");
-  daycount.innerHTML= "小朴今天 "+ diff + "（" + daydiff + "天） 啦~";
+  daycount.innerHTML= "小朴今天 "+ diff + "（" + daydiff + "天）啦~";
 </script>
 
 
@@ -134,8 +143,8 @@ title: 碎语
   const weekDays = diffDays%7;
   const week = "（" + weekCount + "周+" + weekDays + "天）";
 
-  var today  = new Date();
-  date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'});
+  var today = new Date();
+  date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'}) + weekday[today.getDay()];
   var currenttime = document.getElementById("currentdate");
   currenttime.innerHTML = date3;
 
