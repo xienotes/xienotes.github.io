@@ -104,6 +104,27 @@ title: 碎语
     <script src="/assets/js/notePageRedirect.js"></script>
 {% endif %}
 
+<script src="/assets/js/moment.min.js"></script>
+<script src="/assets/js/moment-precise-range.min.js"></script>
+<script src="/assets/js/moment-timezone.min.js"></script>
+<script src="/assets/js/moment-timezone-with-data-1970-2030.min.js"></script>
+
+<script>
+  var today  = new Date();
+  date3 = today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", year:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", month:'numeric'}) + '-'+ today.toLocaleDateString("en-US", {timeZone: "Asia/Shanghai", day:'numeric'});
+  var currenttime = document.getElementById("currentdate");
+  currenttime.innerHTML = date3;
+
+  var starts = moment('2/2/2021 13:12').tz("Asia/Shanghai");
+  var ends = moment().tz("Asia/Shanghai");
+  var diff = moment.preciseDiff(starts, ends);
+  var daydiff = ends.diff(starts,'days');
+  var daycount = document.getElementById("xiaopu");
+  daycount.innerHTML= "小朴今天 "+ diff + "（" + daydiff + "天） 啦~";
+</script>
+
+
+{% comment %}
 <script>
   const date1 = new Date('2/2/2021');
   const date2 = new Date();
@@ -121,3 +142,4 @@ title: 碎语
   var daycount = document.getElementById("xiaopu");
   daycount.innerHTML= "小朴今天 "+ diffDays + " 天" + week + "啦~";
 </script>
+{% endcomment %}
