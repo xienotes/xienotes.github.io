@@ -131,7 +131,14 @@ title: 碎语
   var weekcount = Math.floor(daydiff/7);
   var weekdays = daydiff%7;
   var daycount = document.getElementById("xiaopu");
-  daycount.innerHTML = "小朴今天 "+ diff + "（" + weekcount + "周" + weekdays + "天，"+ daydiff + "天）啦~";
+  if (weekdays == 0) 
+  {
+    daycount.innerHTML = "小朴今天 "+ diff + "（" + weekcount + "周，" + daydiff + "天）啦~";
+  } 
+  else 
+  {
+    daycount.innerHTML = "小朴今天 "+ diff + "（" + weekcount + "周" + weekdays + "天，"+ daydiff + "天）啦~";
+  }
 </script>
 
 
