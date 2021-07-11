@@ -128,8 +128,10 @@ title: 碎语
   var ends = moment().tz("Asia/Shanghai");
   var diff = moment.preciseDiff(starts, ends);
   var daydiff = ends.diff(starts,'days');
+  var weekcount = Math.floor(daydiff/7);
+  var weekdays = daydiff%7;
   var daycount = document.getElementById("xiaopu");
-  daycount.innerHTML= "小朴今天 "+ diff + "（" + daydiff + "天）啦~";
+  daycount.innerHTML = "小朴今天 "+ diff + "（" + weekcount + "周" + weekdays + "天，"+ daydiff + "天）啦~";
 </script>
 
 
