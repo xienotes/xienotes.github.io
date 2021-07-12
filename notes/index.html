@@ -124,7 +124,7 @@ title: 碎语
   var currenttime = document.getElementById("currentdate");
   currenttime.innerHTML = date3;
 
-  var starts = moment('2/2/2021 13:12').tz("Asia/Shanghai");
+  var starts = moment('2/2/2021 00:00').tz("Asia/Shanghai");
   var ends = moment().tz("Asia/Shanghai");
   var diff = moment.preciseDiff(starts, ends);
   var daydiff = ends.diff(starts,'days');
