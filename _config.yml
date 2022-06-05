@@ -71,5 +71,5 @@ algolia:
    files_to_exclude: [index.html, notes/*.html,archive.html, search.html,todo.html, todo.md]
 
 jsdelivr:
-  enabled: true
+  enabled: false
   url: "https://cdn.jsdelivr.net/gh/xienotes/xienotes.github.io"
